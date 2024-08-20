@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../../UTEC CICLO 02"
+		},
+		{
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Bootcamp FSJ"
+	}
+}

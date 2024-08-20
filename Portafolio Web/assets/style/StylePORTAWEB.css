@@ -1,0 +1,35 @@
+body{
+    background-color: #A7B19E !important;
+}
+
+/*-------Header Section--------*/
+
+.header .navbar .logo h2{
+    font-size: 2.5em !important;
+}
+.header .navbar .logo h2 span{
+    color: white;
+    text-shadow: 4px 4px 4px black;
+}
+
+.header .navbar .menu{
+    width: 30vw;
+    display: flex;
+    justify-content: space-around !important;
+    list-style: none;
+}
+.header .navbar .menu li a{
+    text-decoration: none;
+    color: white;
+}
+
+/*--------MAIN SECTION----------*/
+
+.main-cointainer{
+    display: grid;
+    grid-template-columns: 12fr 6fr;
+    align-items: center;
+}
+.main-cointainer .img img{
+    width: 25vw;
+}

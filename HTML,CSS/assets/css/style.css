@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Zain:wght@200;300;400;700;800;900&display=swap');
+
+body{
+    background-color: #f14807;
+    background-image: url(../images/background-adare-restaurant.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+}
+
+/*---Header-----*/
+.container .header{
+    text-align: center;
+    height: 20vh;
+}
+
+/*----img-logo----*/
+.container .header .img{
+    height: 20vh;
+}
+.container .header .img .img-logo{
+    height: 13vh;
+}
+
+/*----- Navbar -----*/
+.container .header .navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+    margin: 0 auto;
+}
+
+.container .header .navbar .nav-item{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: 0.8s;
+}
+.container .header .navbar .nav-item:hover{
+    color: #ee642d;
+    font-size: 1.9em;
+    text-decoration: underline;
+    transition: 0.8s;
+}
+/*--------Main-Text--------------*/
+.container .main-cointainer{
+    text-align: center;
+    margin-top: 3vh;
+}
+.container .main-cointainer .main-text{
+    color: white;
+    padding: 2rem;
+}
+.container .main-cointainer .main-text h1{
+font-family: "Zain", sans-serif;
+font-size: 6.5em;
+transition: 0.7s;
+margin: 0.2em;
+margin-top: 1.0em;
+}
+
+.container .main-cointainer .main-text h1:hover {
+text-shadow: 5px 5px    #ee642d;  
+transition: 0.7s;
+}
+.container .main-cointainer .main-text p{
+color: rgb(168, 168, 168);
+font-family:cursive;    
+font-size: 1.0em
+}
+
+.container .main-cointainer .main-text p strong a{
+text-decoration: none;
+color: white;
+text-shadow: 0.08em 0.08em #ee642d;
+}
+.container .footer{
+    color: white;
+    text-align: center;
+}
+.container .footer h4{
+    font-size: 1.1em;
+}
+
+/*Media Querys Estilo Responsive para tablets*/
+@media (min-width: 768px) and (max-width:992px){
+    .container .header .navbar{
+        width: 60vw
+    }
+}
+
+/*Media Querys para celulares*/
+@media(min-width:310px) and (max-width:760px){
+   /*Header encabezado*/
+    .container .header{
+        margin-left: 0vw;
+    }
+    .container .header .img-logo{
+        margin-left: 3rem;
+    }
+    .container .header .navbar{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        width: 100vw;
+        gap: 0.5rem;
+    }
+    .container .header .navbar .nav-item{
+        font-size: 0.9em;
+    }
+    .container .header .navbar .nav-item:hover{
+        font-size: 1.6em;
+    }
+    .container .main-cointainer{
+        width: 100vw;
+    }
+    .container .main-cointainer .main-text{
+        margin-left: 0.5rem;
+    }
+    .container .main-cointainer .main-text article{
+        width: 80vw;
+    }
+    .container .main-cointainer .mapas{
+        margin-left: 10vw;
+        width: 80vw;
+    }
+    .container .main-cointainer .mapas .map{
+        width:70vw; 
+        height:50vh;
+    }
+}

@@ -11,9 +11,14 @@
     <div class="container">
         <header class="header">
             <nav class="navbar">
-                <section class="logo">  
-                    <h2>J<span>A</span>R</h2>
+                
+                <section class="logo"> 
+                    <div class="row">
+                    <h2 class="col-2"><span>JAR</span></h2>
+                    <img class="col-2" src="./logo.png" alt="logo">
+                    </div>
                 </section>
+
                 <ul class="menu">
                     <li><a href="#">About me</a></li>
                     <li><a href="#">Projects</a></li>
@@ -33,14 +38,14 @@
         </section>
         </main>
 
-        <section class="projects">
+        <section class="projects mt-5 text-center">
             <section class="projects-header">
                 <h2>My Projects</h2>
             </section>
 
             <!-- CONTENEDOR PRINCIPAL DE CARTAS -->
-            <section class="projects-cointainer">
-                <div class="row">
+            <section class="projects-cointainer ">
+                <div class="row d-flex justify-content-center grid gap-5">
 
                     <!-- CARTA NUMERO 1 -->
                 <article class="card col-3">
@@ -49,7 +54,7 @@
                     </section>
                     <section class="card-body">
                     <section class="card-title">
-                        <h1>Hello World</h1>
+                        <h1 class="fs-4">Hello World</h1>
                     </section>
                     <section class="card-links">
                         <a href="#">GitHub</a>
@@ -65,7 +70,7 @@
                     </section>
                     <section class="card-body">
                         <section class="card-title">
-                            <h1>Hello World</h1>
+                            <h1 class="fs-4">Hello World</h1>
                         </section>
                         <section class="card-links">
                             <a href="#">GitHub</a>
@@ -81,7 +86,7 @@
                     </section>
                     <section class="card-body">
                         <section class="card-title">
-                            <h1>Hello World</h1>
+                            <h1 class="fs-4">Hello World</h1>
                         </section>
                         <section class="card-links">
                             <a href="#">GitHub</a>
@@ -94,13 +99,25 @@
             </section>
         </section>
 
-        <section class="contact-form">
-            <form action="#" class="form-group">
-                <input type="text" name="name" placeholder="Escriba su nombre">
-                <input type="Email" name="Email" placeholder="Escriba su correo">
-                <textarea name="menssage" placeholder="Escriba su mensaje aca"></textarea>
-                <a href="#">Enviar</a>
-            </form>
+        <section class="contact-form rounded mx-auto d-block mt-5">
+            <article class="header-form">
+                <h2>CONTACT</h2>
+            </article>
+            <section class="form-body col-10 ms-5">
+                <div class="form-floating mb-4 mt-5 ">
+                    <input type="email" class="form-control p-3 mb-2 bg-transparent bs-body-color border border-dark" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Your Name</label>
+                </div>
+                <div class="form-floating mb-4 mt-5">
+                    <input type="email" class="form-control p-3 mb-2 bg-transparent text-body border border-dark" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control p-3 mb-2 bg-transparent text-body border border-dark" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Comments</label>
+                </div>
+                <a  class="btn btn-success mt-5 col-12" href="#">Send</a>
+            </section>
         </section>
 
         <footer class="footer">

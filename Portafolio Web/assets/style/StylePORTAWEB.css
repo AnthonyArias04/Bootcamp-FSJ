@@ -6,6 +6,15 @@ body{
 
 .header .navbar .logo h2{
     font-size: 2.5em !important;
+    margin-left: 1vw;
+    margin-top: 2.5vh;
+    
+}
+.header .navbar .logo img{
+    margin-top: 2vh;
+    width: 12vw;
+    height: 14vh;
+    margin-left: 2.5vw;
 }
 .header .navbar .logo h2 span{
     color: white;
@@ -32,7 +41,27 @@ body{
 }
 .main-cointainer .img img{
     width: 25vw;
+    border-radius: 2em;
+}
+
+.contact-form{
+    background-image: url(./pngtree-matrix-code-abstract-programming-background-image_908363.png) !important;
+    height: 50vh;
+    width: 30vw;
 }
 
 
-  
+.header-form h2{
+    color: white ;
+    text-align: center;
+}
+
+.form-body {
+    color: white !important;
+}
+.form-body input{
+    color: white !important;
+}
+.form-body textarea{
+    color: white !important;
+}

@@ -48,6 +48,7 @@ body{
     background-image: url(./pngtree-matrix-code-abstract-programming-background-image_908363.png) !important;
     height: 50vh;
     width: 30vw;
+    border-radius: 7rem;
 }
 
 
@@ -63,5 +64,8 @@ body{
     color: white !important;
 }
 .form-body textarea{
+    color: white !important;
+}
+.form-control::placeholder{
     color: white !important;
 }

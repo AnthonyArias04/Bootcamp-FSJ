@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+
 body{
     background-color: #A7B19E !important;
 }
@@ -22,14 +25,23 @@ body{
 }
 
 .header .navbar .menu{
-    width: 30vw;
+    width: 35vw;
+    font-size: 1.5em;
     display: flex;
     justify-content: space-around !important;
     list-style: none;
+    font-family:"Nerko One", cursive;
+    
 }
 .header .navbar .menu li a{
     text-decoration: none;
     color: white;
+    transition: 0.6s;
+}
+.header .navbar .menu li a:hover{
+    font-size: 1.8em;
+    transition: 0.6s;
+    color: black;
 }
 
 /*--------MAIN SECTION----------*/
@@ -49,16 +61,15 @@ body{
     height: 50vh;
     width: 30vw;
     border-radius: 7rem;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
 }
 
 
 .header-form h2{
     color: white ;
     text-align: center;
-}
-
-.form-body {
-    color: white !important;
+    font-size: 3em;
 }
 .form-body input{
     color: white !important;
@@ -68,4 +79,129 @@ body{
 }
 .form-control::placeholder{
     color: white !important;
+    font-size: 1.4em;
+}
+.bi{
+    width: 5vw !important;
+    height: 5vh !important;
+}
+.logo-footer img{
+    width: 10vw;
+    height: 10vh;
+}
+
+@media(min-width:1500px) and (max-width:1800px){
+    .contact-form{
+        width: 40vw !important;
+    }
+    .projects{
+        margin-right: 8em !important;
+    }
+}
+@media(min-width:1000px) and (max-width:1499px){
+    .contact-form {
+        width: 45vw !important;
+        }
+    .header .navbar .menu{
+        width: 45vw;
+    }
+    .header .navbar .logo img {
+        margin-top: 2vh;
+        width: 15vw;
+        height: 15vh;
+        margin-left: 3.5vw;
+    }
+        .projects {
+            margin-right: 8em !important;
+        }
+    }
+@media(min-width:850px) and (max-width:999px){
+    .contact-form {
+        width: 66vw !important;
+    }
+    .header .navbar .menu {
+        width: 40vw;
+        font-size: 1.2em;
+    }
+    .header .navbar .logo img {
+        margin-top: 1vh;
+        width: 19vw;
+        height: 16vh;
+        margin-left: 3vw;
+    }
+        .header .navbar .menu li a:hover {
+            font-size: 1.4em;
+            transition: 0.6s;
+            color: black;
+        }
+                .projects {
+                    margin-right: 4em !important;
+                }
+}
+@media(min-width:750px) and (max-width:849px) {
+    .contact-form {
+        width: 66vw !important;
+    }
+
+    .header .navbar .menu {
+        width: 38vw;
+        font-size: 1em !important;
+    }
+
+    .header .navbar .logo img {
+        margin-top: 1.8vh;
+        width: 15vw;
+        height: 12vh;
+        margin-left: 3.5vw;
+    }
+    .header .navbar .menu li a:hover {
+        font-size: 1.2em;
+        transition: 0.6s;
+        color: black;
+     }
+}
+@media(min-width:650px) and (max-width:749px) {
+    .contact-form {
+        width: 71vw !important;
+    }
+
+    .header .navbar .menu {
+        width: 40vw;
+        font-size: 1em;
+    }
+
+    .header .navbar .logo img {
+        margin-top: 2vh;
+        width: 14vw;
+        height: 11vh;
+        margin-left: 4.5vw;
+    }
+        .header .navbar .menu li a:hover {
+            font-size: 1.2em;
+            transition: 0.6s;
+            color: black;
+        }
+}
+@media(min-width:600px) and (max-width:649px) {
+    .contact-form {
+        width: 71vw !important;
+    }
+
+    .header .navbar .menu {
+        width: 49vw;
+        font-size: 0.9em !important;
+    }
+
+    .header .navbar .logo img {
+        margin-top: 2vh;
+        width: 14vw;
+        height: 11vh;
+        margin-left: 5.5vw;
+    }
+
+    .header .navbar .menu li a:hover {
+        font-size: 1em;
+        transition: 0.6s;
+        color: black;
+    }
 }

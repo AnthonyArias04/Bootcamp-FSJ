@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "../.."
+	},
+	{
+		"path": "../../../HTML UDEMY"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "HTML UDEMY"
+  }
+}

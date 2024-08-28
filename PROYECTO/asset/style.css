@@ -1,0 +1,63 @@
+body{
+    background-color: hsl(47, 88%, 63%);
+    
+}
+
+.cointainer{
+    background-color: hsl(0, 0%, 100%);
+    text-align: center;
+    width: 20rem;
+    height: 27rem;
+    margin: 0 auto;
+    margin-top: 17vh;
+    border-color: black;
+    border-width: 0.1vw;
+    border-style:solid;
+    border-radius: 1vw;
+    border-right-width: 0.6vw;
+    border-top-right-radius: 1.5vw;
+    border-bottom-width: 0.6vw;
+}
+.cointainer .section{
+    margin-top: 2vh;
+}
+.cointainer .section .img-portada{
+    border-radius: 1vw;
+}
+.cointainer .section .article{
+    text-align: left !important;
+    margin-left: 1.3em;
+}
+.cointainer .section .article .h11{
+    background-color: hsl(47, 88%, 63%);
+    text-align:center;
+    width: 6em;
+    height: 3vh;
+    font-size:0.9vw;
+    border-radius: 0.3vw;
+}
+.cointainer .section .article .h3{
+    color: hsl(0, 0%, 7%);
+    margin-top: 0.2em;
+    font-size: 0.99vw;
+}
+.cointainer .section .article .h12{
+    color: hsl(0, 0%, 7%);
+    font-size: 1vw;
+    margin-top: 0.5em;
+    margin-bottom: 1vh;
+}
+.cointainer .section .article .pa{
+    color: hsl(0, 0%, 42%);
+    font-size: 0.9em;
+    margin-top: 1vh;
+}
+.cointainer .section .footer{
+    text-align: left !important;
+    margin-left: 1em;
+}
+.cointainer .section .footer .persona{
+    margin-left: 0.7vw;
+    margin-right: 0.5vw;
+    vertical-align: middle;
+}

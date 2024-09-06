@@ -39,3 +39,16 @@ dinamismo.addEventListener("click", () => {
         console.log("Despues del alert");
         
 })
+
+
+
+function apretandoBoton(){
+        let nombre = prompt("Ingresa tu nombre")
+        alert(nombre)
+}
+
+function cambiandoInput(e){
+        console.log(e.target.value);
+        
+        console.log("Cambie");
+}  

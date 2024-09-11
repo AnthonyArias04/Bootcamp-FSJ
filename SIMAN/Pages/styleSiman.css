@@ -1,0 +1,47 @@
+.col-3{
+    width: 11vw !important; 
+    height: 2.4vh !important;
+}
+
+/*COLOR DE FONDO*/
+.navbar{
+    height: 7vh !important;
+    background-color: #AC2929;
+}
+
+/*BUSCADOR*/
+.buscador{
+    width: 35vw;
+}
+
+.form-control{
+    border-top-right-radius: 3vw;
+    border-bottom-right-radius: 3vw;
+    height: 4vh;
+}
+input::placeholder{
+    color: white !important;
+}
+.form-control textarea{
+    color: white !important;
+}
+.input-group-text{
+    height: 4vh;
+}
+.mensaje{
+    margin-top: 25em ;
+}
+
+.dropdown-menu {
+    margin-left: -5vw; 
+}
+
+/* Alinear el ícono a la par del texto */
+.dropdown-item i {
+    margin-right: 1vw; /* Espacio entre el ícono y el texto */
+    vertical-align: middle; /* Alinea verticalmente con el texto */
+}
+
+
+
+

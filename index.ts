@@ -21,4 +21,32 @@ class   Auto{
     modelo:string;
     añoFab: number;
 
+    //Metodos -> Acciones
+    encender():void {
+        console.log("brum re brum");
+        
+    }
+    apagar():void{
+        console.log("Chaito");
+        
+    }
+
+    //Constructor -> Metodo reservado que nos sirve para instanciar objetos
+constructor(numChasisParam:number, motorParam:string) {
+    this.numChasis = numChasisParam;
+    this.motor = motorParam;
 }
+
+}
+
+//Instanciar objetos a traves de una clase -> Crear un objeto
+
+let autito:Auto = new Auto(145671, "V4");
+
+console.log(autito);
+
+//Asignamos una propiedad al objeto
+autito.modelo = "Tesla";
+
+console.log(autito);
+

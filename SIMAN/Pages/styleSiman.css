@@ -1,6 +1,6 @@
 .col-3{
-    width: 11vw !important; 
-    height: 3vh !important;
+    width: 13vw !important; 
+    height: 3.5vh !important;
 }
 
 /*COLOR DE FONDO*/
@@ -31,7 +31,7 @@ input::placeholder{
 
 /*ICONOS NAVBAR*/
 .input-group-text{
-    height: 4vh;
+    height: 1vh;
 }
 
 
@@ -50,6 +50,19 @@ input::placeholder{
     margin-right: 1vw; /* Espacio entre el ícono y el texto */
     vertical-align: middle; /* Alinea verticalmente con el texto */
 }
+
+
+/*navbar2*/
+.btn-close{
+    position: absolute;
+    left: 10px; /* Cambia la posición izquierda */
+    top: 10px;  /* Cambia la posición superior */
+  }
+
+.offcanvas{
+    width: 20.5vw !important;
+}
+
 
 
 

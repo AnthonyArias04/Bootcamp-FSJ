@@ -21,7 +21,7 @@
             <!--BUSCADOR-->
             <section class="buscador mb-3 ">
                 <form class="d-flex justify-content-center text-light" role="search">
-                    <div class="input-group ">
+                    <article class="input-group ">
                         <span class="input-group-text p-3 mb-2 bg-danger text-white border border-danger rounded-start-pill" id="basic-addon1">
                           <button class="p-3 mb-2 bg-transparent text-body border border-0">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search text-light" viewBox="0 0 16 16">
@@ -30,7 +30,7 @@
                           </button>
                         </span>
                                 <input class="form-control me-2 bi bi-search p-3 mb-2 bg-danger text-white border border-danger" type="search"  placeholder="Buscar " aria-label="Search"  > 
-                    </div> 
+                      </article> 
               </form>
             </section>
 
@@ -39,22 +39,22 @@
             <section class="miniLogos d-flex flex-row-reverse me-5">
 
               
-              <div class="container-fluid mb-4 ">
+              <section class="container-fluid mb-4 ">
                 
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart2 text-light" viewBox="0 0 16 16" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                       <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
                     </svg>
 
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                      <div class="offcanvas-header">  
+                    <section class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                      <article class="offcanvas-header">  
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                      </div>
+                      </article>
                       <span class="mensaje d-flex justify-content-center"> ¡ Tu carrito esta vacio !</span>
-                    </div>
-                  </div>
+                    </section>
+                  </section>
                   
                   <!--BOTON DE USUARIO-->
-                  <div class="dropdown me-1">
+                  <section class="dropdown me-1 mb-4">
                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person text-light" viewBox="0 0 16 16" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                       <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
                     </svg>
@@ -77,11 +77,28 @@
                         </a>
                       </li>
                     </ul>
-                  </div>
+                  </section>
                   
                 </section>
               </nav>
               
+            </header>
+            <header class="header2">
+                <nav class="navbar nav2 bg-body-secondary fixed-top mt-5 ">
+                  <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon "></span>
+                    </button>
+
+                    <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                      <div class="offcanvas-header d-flex align-items-start">
+                        <button type="button" class="btn-close btn-close-white mt-1" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                    </div>
+                    <strong class="depa">Departamentos</strong>
+                  </div>
+                  
+                </nav>
             </header>
             
 

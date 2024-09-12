@@ -16,10 +16,10 @@ class   Auto{
     tipoCombustible:string;
     transmision:string;
     cantidadKilometro:string;
-    cantPasajros:number;
+    cantPasajeros:number;
     frenos:string;
     modelo:string;
-    añoFab: number;
+    anioFab: number;
 
     //Metodos -> Acciones
     encender():void {
@@ -32,16 +32,24 @@ class   Auto{
     }
 
     //Constructor -> Metodo reservado que nos sirve para instanciar objetos
-constructor(numChasisParam:number, motorParam:string) {
+constructor(numChasisParam:number, motorParam:string, colorParam:string, tipoCombustibleParam:string, transmisionParam:string, cantidadKilometroParam:string, cantPasajerosParam:number, frenosParam:string, modeloParam:string, anioFabParam: number) {
     this.numChasis = numChasisParam;
     this.motor = motorParam;
+    this.color = colorParam;
+    this.tipoCombustible = tipoCombustibleParam;
+    this.transmision = transmisionParam;
+    this.cantidadKilometro = cantidadKilometroParam;
+    this.cantPasajeros = cantPasajerosParam;
+    this.frenos = frenosParam;
+    this.modelo = modeloParam;
+    this.anioFab = anioFabParam;
 }
 
 }
 
 //Instanciar objetos a traves de una clase -> Crear un objeto
 
-let autito:Auto = new Auto(145671, "V4");
+let autito:Auto = new Auto(145671, "V4","Negro", "Super", "Automatica", "300 km/h", 6, "Frenos de disco", "Audi", 2025);
 
 console.log(autito);
 
@@ -50,3 +58,5 @@ autito.modelo = "Tesla";
 
 console.log(autito);
 
+autito.modelo = "Tesla"
+console.log(autito);

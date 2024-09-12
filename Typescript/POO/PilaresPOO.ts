@@ -38,8 +38,8 @@ class person{
         return this.name
     }
 
-    setAge(ageParam:number){
-        this.age = ageParam;
+    setAge(ageParam):number{
+        this.age = ageParam
     }
 }
 

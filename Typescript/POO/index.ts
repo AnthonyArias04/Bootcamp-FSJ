@@ -7,7 +7,7 @@
 
 //DECLARACION DE CLASES
 
-class   Auto{
+class Auto{
     //Pensar primero en las caracteristicas generales de todos los autos -> SE LE LLAMA: Propiedades o Atributos
 
     numChasis: number;

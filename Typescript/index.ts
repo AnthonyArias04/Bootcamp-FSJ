@@ -7,7 +7,7 @@
 
 //DECLARACION DE CLASES
 
-class Auto{
+    class Automatica{
     //Pensar primero en las caracteristicas generales de todos los autos -> SE LE LLAMA: Propiedades o Atributos
 
     numChasis: number;
@@ -49,7 +49,7 @@ constructor(numChasisParam:number, motorParam:string, colorParam:string, tipoCom
 
 //Instanciar objetos a traves de una clase -> Crear un objeto
 
-let autito:Auto = new Auto(145671, "V4","Negro", "Super", "Automatica", "300 km/h", 6, "Frenos de disco", "Audi", 2025);
+let autito: Automatica = new Automatica(145671, "V4","Negro", "Super", "Automatica", "300 km/h", 6, "Frenos de disco", "Audi", 2025);
 
 console.log(autito);
 

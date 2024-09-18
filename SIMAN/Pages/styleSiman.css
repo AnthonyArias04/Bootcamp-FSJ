@@ -77,8 +77,24 @@ input::placeholder{
     font-size: larger !important;
 }
 .lista-servi{
-    width: 15vw;
+    width: 17vw;
+    height: 32vh;
 }
-
+.lista-servi a :hover{
+    text-decoration: underline !important;
+}
+.lista-servi a{
+    background-color: transparent !important;
+}
+.navegador-seg a :hover{
+    text-decoration: underline !important;
+}
+.navegador-seg a{
+    font-size: medium !important;
+}
+.new-menu:hover .menu-2 {
+    display: block;
+    
+  }
 
 

@@ -1,6 +1,6 @@
 .col-3{
-    width: 13vw !important; 
-    height: 3vh !important;
+    width: 9vw !important; 
+    height: 2.3vh !important;
 }
 
 /*COLOR DE FONDO*/
@@ -63,12 +63,21 @@ input::placeholder{
   }
 
 .offcanvas{
-    width: 20.5vw !important;
+    width: 13.5vw !important;
 }
 
 .boton-nag{
-    margin-left: 4vw;
     border: none !important;
+}
+
+.btn-group{
+    margin-left: 6vw !important;
+}
+.servi{
+    font-size: larger !important;
+}
+.lista-servi{
+    width: 15vw;
 }
 
 

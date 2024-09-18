@@ -30,4 +30,9 @@ form.addEventListener("submit",(e:SubmitEvent) => {
    e.preventDefault(); 
   console.log("Holiwis");
 
+  const username = (document.getElementById("username") as HTMLInputElement).value;
+  const password = (document.getElementById("password") as HTMLInputElement).value;
+  console.log(username);
+  console.log(password);
+  
 })

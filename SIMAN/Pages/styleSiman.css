@@ -96,5 +96,24 @@ input::placeholder{
     display: block;
     
   }
+.menu-2{
+    margin-left: 9vw !important;
+    width: 30vw;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: red; 
+  border-radius: 50%; 
+  padding: 10px; 
+}
 
+.carousel-control-prev,
+.carousel-control-next {
+  filter: brightness(1)
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  filter: brightness(1); 
+}
 

@@ -3,7 +3,7 @@
     height: 2.3vh !important;
 }
 
-/*COLOR DE FONDO*/
+/*CONFIGURACION DE LOS NAVEGADORES*/
 .nav1{
     height: 5.5vh !important;
     background-color: #AC2929;
@@ -62,6 +62,7 @@ input::placeholder{
     top: 10px;  
   }
 
+/*CONFIGURACION DE DEPARTAMENTOS*/
 .offcanvas{
     width: 13.5vw !important;
 }
@@ -70,6 +71,7 @@ input::placeholder{
     border: none !important;
 }
 
+/*BOTON SERVICIOS CONFIGURACION*/
 .btn-group{
     margin-left: 6vw !important;
 }
@@ -86,6 +88,7 @@ input::placeholder{
 .lista-servi a{
     background-color: transparent !important;
 }
+/*CONFIGURACION DE EL NAVEGADOR 2 TEXTO*/
 .navegador-seg a :hover{
     text-decoration: underline !important;
 }
@@ -117,3 +120,52 @@ input::placeholder{
   filter: brightness(1); 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERYS DE ANCHO DE 900 A 1124*/
+@media(min-width:900px) and (max-width:1500px){
+    .nav1{
+        height: 8vh !important;
+    }
+    .col-3{
+        width: 10vw !important; 
+        height: 3vh !important;
+    }
+    .nav2{
+        margin-top: 7vh !important;
+    }
+    .offcanvas{
+        width: 20vw !important;
+    }
+    .btn-group{
+        margin-left: 3vw !important;
+    }
+    .lista-servi{
+        margin-left: 15vw !important;
+        width: 19vw;
+        height: 45vh;
+    }
+    .navegador-seg a{
+        font-size: 1.10vw !important;
+    }
+    .menu-2{
+        margin-left: 13vw !important;
+        width: 30vw;
+    }
+    .form-control1{
+        border-color: transparent !important;
+    }
+    .form-control1::placeholder{
+        color: gray !important;
+    }
+}

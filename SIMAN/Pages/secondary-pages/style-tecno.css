@@ -1,5 +1,0 @@
-.carousel {
-    display: grid;
-    grid-template-columns: 12fr, 12fr;
-    align-items: center !important;
-}

@@ -1,3 +1,9 @@
+.carousel {
+    display: grid;
+    grid-template-columns: 12fr, 12fr;
+    align-items: center !important;
+}
+
 .col-3{
     width: 9vw !important; 
     height: 2.3vh !important;
@@ -119,8 +125,10 @@ input::placeholder{
 .carousel-control-next:hover {
   filter: brightness(1); 
 }
-
-
+.produ{
+    margin-top: 13vh !important;
+    text-align: start;
+}
 
 
 
@@ -168,60 +176,5 @@ input::placeholder{
     .form-control1::placeholder{
         color: gray !important;
     }
-   
-}
-
-@media (min-width: 700px) and (max-width: 899px){
-    .nav1{
-        height: 9vh !important;
-    }
-    .col-3{
-        width: 15vw !important; 
-        height: 3vh !important;
-    }
-    .nav2{
-        margin-top: 9vh !important;
-    }
-    .navegador-seg a{
-        font-size: 1.7vw !important;
-    }
-    .offcanvas{
-        width: 30vw !important;
-    }
-    .btn-group{
-        margin-left: 2vw !important;
-    }
-    .nav-extra{
-        display: none;
-    }
-    .linea{
-        display: none;
-    }
-    .servi{
-        align-items: end !important;
-    }
-    .navegador2{
-        display: none !important;
-    }
-    .cuadro1{
-        width: 45vw;
-    }
-    .cuadro2{
-        width: 45vw;
-        
-    }
-    .cuadro3{
-       width: 45vw;
-       
-    }
-    .cuadro4{
-        width: 45vw;
-    }
-    .dron{
-        width: 100vw;
-        margin-left: 1vw;
-    }
-    .cuadritos{
-        margin-right: 5vw;
-    }
+    
 }

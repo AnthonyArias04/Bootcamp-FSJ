@@ -97,8 +97,9 @@ input::placeholder{
     
   }
 .menu-2{
-    margin-left: 9vw !important;
+    margin-left: 9.5vw !important;
     width: 30vw;
+    height: 90vh;
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {

@@ -4,46 +4,437 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style-tecno.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style-muebles.css">
+    <title>TECNOLOGIA-SIMAN</title>
 </head>
 <body>
-    
-    <main class="holis-main">
-        <div id="carouselExampleAutoplaying" class="carousel slide align-self-center col-10" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../../img7/Publicidad-MAIN/Primera.jpg" class="d-block w-100 rounded mx-auto d-block" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="../../img7/Publicidad-MAIN/Segunda.jpg" class="d-block w-100 rounded mx-auto d-block" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="../../img7/Publicidad-MAIN/Tercera.jpg" class="d-block w-10 rounded mx-auto d-block" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="../../img7/Publicidad-MAIN/Cuarta.jpg" class="d-block w-100 rounded mx-auto d-block" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="../../img7/Publicidad-MAIN/Quinta.jpg" class="d-block w-100 rounded mx-auto d-block" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="../../img7/Publicidad-MAIN/sexta.jpg" class="d-block w-100 rounded mx-auto d-block" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="../../img7/Publicidad-MAIN/Septima.jpg" class="d-block w-100 rounded mx-auto d-block" alt="...">
-              </div>
+
+    <header class="header ">
+              
+        <!--NAVEGADOR #2-->
+        <nav class="navbar nav2 bg-body-secondary fixed-top">
+          <section class="d-flex justify-content-start">
+            <button class="navbar-toggler boton-nag ms-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon "></span>
+            </button>
+
+            <section class="d-flex align-items-center naveg">
+            <section class="offcanvas offcanvas-start text-bg-light" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+              <article class="offcanvas-header d-flex align-items-start ">
+                <button type="button" class="btn-close btn-close-black mt-1 " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </article>
+                <!--MENU DE DEPARTAMENTOS-->
+
+                <article><h5 class="border-bottom pb-3 mt-5 text-center">DEPARTAMENTOS</h5></article>
+              
+                
+                <section class="new-menu row">
+
+                  <a href="https://sv.siman.com/calzado" class="text-start menu-depa text-decoration-none mt-3">
+                    <span class="ms-5">CALZADO</span>
+                  </a>
+
+                  <a href="./secondary-pages/Tecnologia.html" class="text-start menu-depa text-decoration-none mt-3" >
+                  <span class="ms-5">TECNOLOGIA</span>
+                  </a>
+
+                  <a href="https://sv.siman.com/celulares-y-tablets" class="text-start menu-depa text-decoration-none mt-3">
+                  <span class="ms-5">CELULARES</span>
+                  </a>
+                  <a href="../secondary-pages/Muebles.html" class="text-start menu-depa text-decoration-none mt-3">
+                  <span class="ms-5">MUEBLES</span>
+                  </a>
+                  <a href="https://sv.siman.com/belleza-e-higiene" class="text-start menu-depa text-decoration-none mt-3" >
+                  <span class="ms-5">BELLEZA</span>
+                  </a>
+                  <a href="https://sv.siman.com/moda-caballeros?lvl=dep" class="text-start menu-depa text-decoration-none mt-3" >
+                  <span class="ms-5">CABALLEROS</span>
+                  </a>
+                  <a href="https://sv.siman.com/moda-damas?lvl=dep" class="text-start menu-depa text-decoration-none mt-3" >
+                  <span class="ms-5 ">DAMAS</span>
+                  </a>
+
+                
+                </section>
+
+              
+            </section>
+            <div class="">
+              <span class="navbar-text text-start">
+                <strong>Departamentos</strong>
+              </span>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+          </section>
+          
+          <!--BOTON DE SERVICIOS-->
+          <div class="btn-group dropstart align-self-center d-flex align-items-center">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+              <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+              <span class="servi ms-1">Servicios</span></svg> 
+              <!--NAVEGADOR DE EL BOTON DE SERVICIO-->
+              <ul class="dropdown-menu mt-5 bg-body-secondary lista-servi">
+              
+                <a class="dropdown-item ms-3" href="https://sv.siman.com/tel.2298-3777">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                </svg>
+                <span class="ms-2">2298-3777</span>
+              </a>
+
+              <a class="dropdown-item ms-3 " href="https://api.whatsapp.com/send/?phone=50322105454&text=%C2%A1Hola!%20Estoy%20visitando%20siman.com%20y%20tengo%20una%20duda&app_absent=0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                </svg>
+                <span class="ms-2">Compra por WhatsApp</span>
+              </a>
+
+              <a class="dropdown-item ms-3" href="https://simangiftregistry.web.app/pais/El%20Salvador">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
+                  <path d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A3 3 0 0 1 3 2.506zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43zM9 3h2.932l.023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0zM1 4v2h6V4zm8 0v2h6V4zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5z"/>
+                </svg>
+                <span class="ms-2">Clubes</span>
+              </a>
+
+              <a class="dropdown-item ms-3" href="https://sv.siman.com/afiliacion-credisiman-visa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-text" viewBox="0 0 16 16">
+                  <path d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5M5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1z"/>
+                  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1"/>
+                </svg>
+                <span class="ms-2">Afiliación Credisiman</span>
+              </a>
+
+              <a class="dropdown-item ms-3" href="https://www.credisiman.com/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+                  <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                </svg>
+                <span class="ms-2">Credisiman</span>
+              </a>
+
+              <a class="dropdown-item ms-3" href="https://sv.siman.com/sucursales">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                  <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+                </svg>
+                <span class="ms-2">Horario de sucursales</span>
+              </a>
+
+              <a class="dropdown-item ms-3" href="https://sv.siman.com/vende-en-siman">
+                <img src="../img7/Icono_SimanDark___3ec3fbf86938ef73a7e1f627d8bfb340.jpg" alt="">
+                <span>Vende en siman.com</span>
+              </a>
+            </ul>
+            <span class="ms-5 linea">|</span>
+            
           </div>
-    </main>
+
+          <!--MENU ADICIONAL DE EL NAVEGADOR-->
+          <section class="navegador-seg ms-5 align-self-center nav-extra">
+            
+            <a class="navbar-brand" href="https://sv.siman.com/grabaciones?utm_source=portada&utm_campaign=live-shopping&utm_medium=header"> <span>Live Shopping</span></a>
+            <a class="navbar-brand " href="https://sv.siman.com/rebajas-2024?utm_source=portada&utm_campaign=btst-rebajas&utm_medium=header"> <span>Rebajas</span></a>
+            <a class="navbar-brand " href="https://sv.siman.com/marketplace"> <span>Exclusivo Online</span></a>
+            <a class="navbar-brand " href="https://sv.siman.com/celulares-y-tablets"> <span>Celulares</span></a>
+            <a class="navbar-brand " href="https://sv.siman.com/calzado"> <span>Calzado</span></a>
+            <a class="navbar-brand " href="./secondary-pages/Tecnologia.html"> <span>Tecnología</span></a>
+            <a class="navbar-brand " href="../secondary-pages/Muebles.html"> <span>Muebles</span></a>
+            <a class="navbar-brand " href="https://sv.siman.com/belleza-e-higiene"> <span>Belleza</span></a>
+            <a class="navbar-brand " href="https://sv.siman.com/condiciones-ofertas"> <span>Condiciones de ofertas</span></a>
+            
+          </section>
+          
+       
+          
+         
+            
+          </section>
+
+  
+        <!--NAVEGADOR CONTENEDOR PRINCIPAL-->
+        <nav class="navbar nav1 mw-150 fixed-top ">
+            
+          <!--LOGO-->
+          <a href="../PrincipalPage.html">
+          <img class="ms-3 col-3 mb-4" src="../../img7/logo.png" alt="SIMANLOGO">
+          </a>
+            
+            <!--BUSCADOR-->
+            <section class="buscador mb-3 ">
+              <form class="d-flex justify-content-center text-light" role="search">
+                <article class="input-group ">
+                  <span class="input-group-text p-3 mb-2 bg-danger text-white border border-danger rounded-start-pill" id="basic-addon1">
+                    <button class="p-3 mb-2 bg-transparent text-body border border-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search text-light" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                      </svg>
+                    </button>
+                  </span>
+                    <input class="form-control me-2 bi bi-search p-3 mb-2 bg-danger text-white border border-danger" type="search"  placeholder="Buscar " aria-label="Search"  > 
+                </article> 
+              </form>
+            </section>
+
+            
+            <!--MINI-ICONOS DEL NAVBAR-->
+            <section class="miniLogos d-flex flex-row-reverse me-5">
+
+              <!--ICONO DEL CARRITO-->
+              <section class="container-fluid mb-4 ">
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart2 text-light" viewBox="0 0 16 16" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                      <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                    </svg>
+
+                    <section class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                      <article class="offcanvas-header">  
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </article>
+                      <span class="mensaje d-flex justify-content-center"> ¡ Tu carrito esta vacio !</span>
+                    </section>
+                  </section>
+                  
+                  <!--BOTON DE USUARIO-->
+                  <section class="dropdown me-1 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person text-light" viewBox="0 0 16 16" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                      <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                    </svg>
+
+                    <ul class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuButton">
+                      <li>
+                        <a class="dropdown-item" href="https://sv.siman.com/login?returnUrl=%2Fdrone-mini-4-pro-gl-104599574%2Fp%3Futm_source%3Dportada%26utm_campaign%3Dbt-cs-exclusivo-online-drone-dji-mini-4-pro%26utm_medium%3Dbloque-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                        </svg> <span>MI CUENTA</span>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="https://sv.siman.com/login?returnUrl=%2Faccount%23%2Fcustom-orders">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard-check-fill ms-1" viewBox="0 0 16 16">
+                        <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z"/>
+                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708"/>
+                        </svg> <span class="ms-1">MIS PEDIDOS</span>
+                        </a>
+                      </li>
+                    </ul>
+              </section>
+                  
+                </section>
+              </nav>
+              
+            </header>
+    
+  <main class="container my-5">
+    <div class="row text-center">
+        <section class="produ mb-3  ">
+        <span class="mb-2 text-start">8 Productos</span>
+        </section>
+        <!-- Tarjeta 1 -->
+        <div class="col-md-3">
+            <div class="card">
+                <img src="../../img7/Tenologia/ps5.webp " class="card-img-top" alt="Respaldo king con mesas y...">
+                <div class="card-body">
+                    <h5 class="card-title">SONY</h5>
+                    <p class="card-text">PlayStation 5 slim digital...</p>
+                    <p class="text-danger">$679.00 <span class="text-decoration-line-through text-muted"></span> <span class="badge bg-danger"></span></p>
+                    <button class="btn btn-primary">COMPRAR</button>
+                    <div class="mt-2">
+                        <span class="badge bg-dark rounded-circle p-2"></span>
+                        <span class="badge bg-secondary rounded-circle p-2"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="col-md-3">
+            <div class="card">
+                <img src="../../img7/Tenologia/smartwatch.webp" class="card-img-top" alt="Sala seccional Eliza 4 piezas">
+                <div class="card-body">
+                    <h5 class="card-title">Samsung</h5>
+                    <p class="card-text">Reloj smartwatch Samsung....</p>
+                    <p class="text-danger">$219.00 <span class="text-decoration-line-through text-muted">$359.00</span> <span class="badge bg-danger">-39%</span></p>
+                    <button class="btn btn-primary">COMPRAR</button>
+                    <div class="mt-2">
+                        <span class="badge bg-light rounded-circle p-2"></span>
+                        <span class="badge bg-dark rounded-circle p-2"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="col-md-3">
+            <div class="card">
+                <img src="../../img7/Tenologia/starlink.webp" class="card-img-top" alt="Respaldo king con mesas de...">
+                <div class="card-body">
+                    <h5 class="card-title">Starlink</h5>
+                    <p class="card-text">Kit AC sistema WIFI de...</p>
+                    <p class="text-danger">$200.00 <span class="text-decoration-line-through text-muted"></span> <span class="badge bg-danger"></span></p>
+                    <button class="btn btn-primary">COMPRAR</button>
+                    <div class="mt-2">
+                        <span class="badge bg-light rounded-circle p-2"></span>
+                        <span class="badge bg-dark rounded-circle p-2"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 4 -->
+        <div class="col-md-3">
+            <div class="card">
+                <img src="../../img7/Tenologia/barra de sonido.webp" class="card-img-top" alt="Sillón individual">
+                <div class="card-body">
+                    <h5 class="card-title">Samsung</h5>
+                    <p class="card-text">Barra de sonido samsung...</p>
+                    <p class="text-danger">$219.00 <span class="text-decoration-line-through text-muted"></span> <span class="badge bg-danger"></span></p>
+                    <button class="btn btn-primary">COMPRAR</button>
+                    <div class="mt-2">
+                        <span class="badge bg-light rounded-circle p-2"></span>
+                        <span class="badge bg-dark rounded-circle p-2"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+     <!-- Tarjeta 5 -->
+     <div class="col-md-3">
+        <div class="card">
+            <img src="../../img7/Tenologia/galaxy tab.webp" class="card-img-top" alt="Respaldo king con mesas y...">
+            <div class="card-body">
+                <h5 class="card-title">Samsung</h5>
+                <p class="card-text">Tablet Samsung Galaxy Ta...</p>
+                <p class="text-danger">$199.00 <span class="text-decoration-line-through text-muted">$285.00</span> <span class="badge bg-danger">-30%</span></p>
+                <button class="btn btn-primary">COMPRAR</button>
+                <div class="mt-2">
+                    <span class="badge bg-dark rounded-circle p-2"></span>
+                    <span class="badge bg-secondary rounded-circle p-2"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tarjeta 6 -->
+    <div class="col-md-3">
+        <div class="card">
+            <img src="../../img7/Tenologia/apple pen.webp" class="card-img-top" alt="Sala seccional Eliza 4 piezas">
+            <div class="card-body">
+                <h5 class="card-title">Apple</h5>
+                <p class="card-text">Apple pencil - 1a gen</p>
+                <p class="text-danger">$151.90 <span class="text-decoration-line-through text-muted"></span> <span class="badge bg-danger"></span></p>
+                <button class="btn btn-primary">COMPRAR</button>
+                <div class="mt-2">
+                    <span class="badge bg-light rounded-circle p-2"></span>
+                    <span class="badge bg-dark rounded-circle p-2"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tarjeta 7 -->
+    <div class="col-md-3">
+        <div class="card">
+            <img src="../../img7/Tenologia/applke ipad.webp" class="card-img-top" alt="Respaldo king con mesas de...">
+            <div class="card-body">
+                <h5 class="card-title">Apple</h5>
+                <p class="card-text">Apple iPad 2024 13" Wi...</p>
+                <p class="text-danger">$1,699.00<span class="text-decoration-line-through text-muted">$1,724.00</span> <span class="badge bg-danger">-20%</span></p>
+                <button class="btn btn-primary">COMPRAR</button>
+                <div class="mt-2">
+                    <span class="badge bg-light rounded-circle p-2"></span>
+                    <span class="badge bg-dark rounded-circle p-2"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tarjeta 8 -->
+    <div class="col-md-3">
+        <div class="card">
+            <img src="../../img7/Tenologia/nintendo s.webp" class="card-img-top" alt="Sillón individual">
+            <div class="card-body">
+                <h5 class="card-title">Nintendo</h5>
+                <p class="card-text">Nintendo switch OLED...</p>
+                <p class="text-danger">$579.00 <span class="text-decoration-line-through text-muted"></span> <span class="badge bg-danger"></span></p>
+                <button class="btn btn-primary">COMPRAR</button>
+                <div class="mt-2">
+                    <span class="badge bg-light rounded-circle p-2"></span>
+                    <span class="badge bg-dark rounded-circle p-2"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+
+<footer class="bg-light pt-5 pb-4 bg-body-secondary mt-5">
+    <div class="container">
+        <div class="row">
+            <!-- Columna de la izquierda: Logo, suscripción y contacto -->
+            <div class="col-md-4">
+                <h5><img src="../../img7/logo rojo siman.png" alt="Siman Logo" style="max-width: 120px;"></h5>
+                <p>Suscríbete para obtener las mejores ofertas</p>
+                <form class="input-group mb-3">
+                    <input type="email" class="form-control1 " placeholder="e-mail" aria-label="e-mail">
+                    <button class="btn btn-dark" type="button">Suscribirme</button>
+                </form>
+                <p class="mb-1"><strong>Teléfono:</strong> 2298-3777</p>
+                <p>Mantente en contacto con nosotros</p>
+                <div>
+                    <a href="https://www.facebook.com/simanelsalvador/" target="_blank"><img src="../../img7/REDES SOCIALES/png-clipart-facebook-logo-computer-icons-facebook-logo-facebook-thumbnail.png" alt="X" style="width: 24px;"></a>
+                    <a href="#"><img src="../../img7/REDES SOCIALES/instagram-logo-instagram-logo-transparent-instagram-icon-transparent-free-free-png.webp" alt="X" style="width: 24px;"></a>
+                    <a href="#"><img src="../../img7/REDES SOCIALES/X-Logo.png" alt="X" style="width: 24px;"></a>
+                    <a href="#"><img src="../../img7/REDES SOCIALES/png-transparent-youtube-computer-icons-youtube-angle-rectangle-black-thumbnail.png" alt="YouTube" style="width: 24px;"></a>
+                </div>
+            </div>
+
+            <!-- Columna corporativa -->
+            <div class="col-md-2">
+                <h6 class="fw-bold">SIMAN CORPORATIVO</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-dark text-decoration-none">Quiénes Somos</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Visión y Misión</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Historia</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Sucursales</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Servicios</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna de programas -->
+            <div class="col-md-3">
+                <h6 class="fw-bold">PROGRAMAS</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-dark text-decoration-none">Monedero</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Certificados de Regalo</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Garantías</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Siman PRO</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Credisiman</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Marketplace</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Vende en Marketplace</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna de servicio al cliente -->
+            <div class="col-md-3 ">
+                <h6 class="fw-bold">SERVICIO AL CLIENTE</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-dark text-decoration-none">Preguntas Frecuentes</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Política de devoluciones</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Contáctenos</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Seguridad del sitio</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Política de Privacidad</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Condiciones ofertas</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Derecho de Retracto</a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Condiciones de uso</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+    
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

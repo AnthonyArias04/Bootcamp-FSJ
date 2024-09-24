@@ -1,3 +1,9 @@
+.carousel {
+    display: grid;
+    grid-template-columns: 12fr, 12fr;
+    align-items: center !important;
+}
+
 .col-3{
     width: 9vw !important; 
     height: 2.3vh !important;
@@ -100,9 +106,8 @@ input::placeholder{
     
   }
 .menu-2{
-    margin-left: 9.5vw !important;
+    margin-left: 9vw !important;
     width: 30vw;
-    height: 90vh;
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -120,6 +125,18 @@ input::placeholder{
 .carousel-control-next:hover {
   filter: brightness(1); 
 }
+.produ{
+    margin-top: 13vh !important;
+    text-align: start;
+}
+
+
+
+
+
+
+
+
 
 
 @media(min-width:1601px) and (max-width:1900px){
@@ -157,24 +174,6 @@ input::placeholder{
     .form-control1::placeholder{
         color: gray !important;
     }
-    .cuadro1{
-        width: 45vw;
-    }
-    .cuadro2{
-        width: 45vw;
-        
-    }
-    .cuadro3{
-       width: 45vw;
-       
-    }
-    .cuadro4{
-        width: 45vw;
-    }
-    .dron{
-        width: 100vw;
-        margin-left: 1vw;
-    } 
 }
 
 
@@ -219,31 +218,13 @@ input::placeholder{
     .form-control1::placeholder{
         color: gray !important;
     }
-    .cuadro1{
-        width: 45vw;
-    }
-    .cuadro2{
-        width: 45vw;
-        
-    }
-    .cuadro3{
-       width: 45vw;
-       
-    }
-    .cuadro4{
-        width: 45vw;
-    }
-    .dron{
-        width: 100vw;
-        margin-left: 1vw;
-    }
     
 }
 
 
 
 /*MEDIA QUERYS DE ANCHO DE 900 A 1124*/
-@media(min-width:1101px) and (max-width:1300px){
+@media(min-width:1101px) and (max-width:1800px){
     .nav1{
         height: 9vh !important;
     }
@@ -266,7 +247,7 @@ input::placeholder{
         height: 45vh;
     }
     .navegador-seg a{
-        font-size: 1.10vw !important;
+        font-size: 1vw !important;
     }
     .menu-2{
         margin-left: 13vw !important;
@@ -278,24 +259,6 @@ input::placeholder{
     .form-control1::placeholder{
         color: gray !important;
     }
-    .cuadro1{
-        width: 45vw;
-    }
-    .cuadro2{
-        width: 45vw;
-        
-    }
-    .cuadro3{
-       width: 45vw;
-       
-    }
-    .cuadro4{
-        width: 45vw;
-    }
-    .dron{
-        width: 100vw;
-        margin-left: 1vw;
-    }
     .linea{
         display: none;
     }
@@ -303,17 +266,17 @@ input::placeholder{
 
 @media (min-width: 700px) and (max-width: 1100px){
     .nav1{
-        height: 9vh !important;
+        height: 4.5vh !important;
     }
     .col-3{
-        width: 15vw !important; 
+        width: 30vw !important; 
         height: 3vh !important;
     }
     .nav2{
-        margin-top: 9vh !important;
+        margin-top: 4vh !important;
     }
     .navegador-seg a{
-        font-size: 1.7vw !important;
+        font-size: 1vw !important;
     }
     .offcanvas{
         width: 30vw !important;
@@ -334,27 +297,6 @@ input::placeholder{
         width: 30vw;
         height: 60vh;
     }
-    .cuadro1{
-        width: 45vw;
-    }
-    .cuadro2{
-        width: 45vw;
-        
-    }
-    .cuadro3{
-       width: 45vw;
-       
-    }
-    .cuadro4{
-        width: 45vw;
-    }
-    .dron{
-        width: 100vw;
-        margin-left: 1vw;
-    }
-    .cuadritos{
-        margin-right: 5vw;
-    }
 }
 @media (min-width: 400px) and (max-width: 699px){
     .nav1{
@@ -371,7 +313,7 @@ input::placeholder{
         font-size: 1.7vw !important;
     }
     .offcanvas{
-        width: 44vw !important;
+        width: 65vw !important;
     }
     .btn-group{
         margin-left: 2vw !important;
@@ -386,30 +328,9 @@ input::placeholder{
         align-items: end !important;
     }
     .lista-servi{
-        width: 45vw;
+        width: 57vw;
         height: 60vh;
         }
-    .cuadro1{
-        width: 45vw;
-    }
-    .cuadro2{
-        width: 45vw;
-        
-    }
-    .cuadro3{
-       width: 45vw;
-       
-    }
-    .cuadro4{
-        width: 45vw;
-    }
-    .dron{
-        width: 100vw;
-        margin-left: 1vw;
-    }
-    .cuadritos{
-        margin-right: 5vw;
-    }
     .buscador{
         display: none;
     }
@@ -417,20 +338,21 @@ input::placeholder{
 
 @media (min-width: 280px) and (max-width: 399px){
     .nav1{
-        height: 10vh !important;
+        height: 9vh !important;
     }
-    .col-3{  
-        width: 28vw !important; 
-        height: 4vh !important;
+    .col-3{
+        width: 20vw !important; 
+        height: 3vh !important;
     }
     .nav2{
         margin-top: 9vh !important;
+        height: 6vh;
     }
     .navegador-seg a{
         font-size: 1.7vw !important;
     }
     .offcanvas{
-        width: 52vw !important;
+        width: 48vw !important;
     }
     .btn-group{
         margin-left: 2vw !important;
@@ -445,29 +367,8 @@ input::placeholder{
         align-items: end !important;
     }
     .lista-servi{
-        width: 36vw;
+        width: 65vw;
         height: 60vh;
-    }
-    .cuadro1{
-        width: 45vw;
-    }
-    .cuadro2{
-        width: 45vw;
-        
-    }
-    .cuadro3{
-       width: 45vw;
-       
-    }
-    .cuadro4{
-        width: 45vw;
-    }
-    .dron{
-        width: 100vw;
-        margin-left: 1vw;
-    }
-    .cuadritos{
-        margin-right: 5vw;
     }
     .buscador{
         display: none;
@@ -476,47 +377,50 @@ input::placeholder{
 
 @media (min-height: 400px) and (max-height: 699px){
     .nav1{
-        height: 7.5vh !important;
+        height: 9vh !important;
+    }
+    .col-3{
+        width: 18vw !important; 
+        height: 3vh !important;
+    }
+    .nav2{
+        margin-top: 9vh !important;
+        height: 6vh;
+    }
+    .navegador-seg a{
+        font-size: 1vw !important;
+    }
+}
+@media (min-height: 700px) and (max-height: 1100px){
+    .nav1{
+        height: 6.5vh !important;
+    }
+    .col-3{
+        width: 25vw !important; 
+        height: 3vh !important;
+    }
+    .nav2{
+        margin-top: 5vh !important;
+        height: 6vh;
+    }
+    .navegador-seg a{
+        font-size: 1.1vw !important;
+    }
+}
+
+@media(min-height:1101px) and (max-height:1300px){
+    .nav1{
+        height: 5vh !important;
     }
     .col-3{
         width: 15vw !important; 
         height: 3vh !important;
     }
     .nav2{
-        margin-top: 6.5vh !important;
+        margin-top: 5vh !important;
+        height: 6vh;
     }
     .navegador-seg a{
-        font-size: 1vw !important;
-    }
-}
-
-@media (min-height: 700px) and (max-height: 1100px){
-    .nav1{
-        height: 6vh !important;
-    }
-    .col-3{
-        width: 13vw !important; 
-        height: 2vh !important;
-    }
-    .nav2{
-        margin-top: 4.5vh !important;
-    }
-    .navegador-seg a{
-        font-size: 1vw !important;
-    }
-}
-@media (min-height: 1101px) and (max-height: 1900px){
-    .nav1{
-        height: 4vh !important;
-    }
-    .col-3{
-        width: 23vw !important; 
-        height: 2vh !important;
-    }
-    .nav2{
-        margin-top: 3.8vh !important;
-    }
-    .navegador-seg a{
-        font-size: 1.7vw !important;
+        font-size: 1.2vw !important;
     }
 }

@@ -69,6 +69,7 @@ console.log("Soy una funcion tipo void");
 }
 
 tipoVoid();
+console.log(tipoVoid());
 
 //Tipo Return -> Devuelve el valor
 function tipoReturn() {
@@ -78,12 +79,13 @@ function tipoReturn() {
 }
 
 tipoReturn();
+console.log(tipoReturn());
 
 //DIFERENCIA ENTRE LAS FUNCIONES VOID Y RETURN
-let ejecucion1 = tipoVoid();
 let ejecucion2 = tipoReturn();
-console.log(ejecucion1);
 console.log(ejecucion2);
+let ejecucion1 = tipoVoid();
+console.log(ejecucion1);
 
 
 
@@ -115,6 +117,7 @@ function funcionCallback(arias) {
     //RECIBI UNA FUNCION POR LO TANTO LA EJECUTO
     arias()
 }
+ 
 
 function funcionAuxiliar() {
     console.log("Estoy funcionando pero desde el callback");

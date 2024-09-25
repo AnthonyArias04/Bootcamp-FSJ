@@ -20,171 +20,118 @@
                 </section>
 
                 <ul class="menu">
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Members</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#boti">Members</a></li>
+                    <li><a href="#menb">Projects</a></li>
+                    <li><a href="#contact">Contact us</a></li>
                 </ul>
+                <section>
+                  <button class="btn btn-light mt-4 col-6" id="btn_white" style="display: inline;">Light</button>
+                  <button class="btn btn-dark mt-4 col-6" id="btn_original" style="display: inline;">Dark</button>
+                </section>
+                <div class="fontmenu">
+                  <label  for="fonts-menu">Choose a font</label>
+                  <select id="fonts-menu">
+                    <option value="Arial, sans-serif">Arial</option>
+                    <option value="'Times New Roman', Times, serif">Times New Roman</option>
+                    <option value="Georgia, serif">Georgia</option>
+                  </select>
+                </div>
+
+
+                
+
             </nav>
         </header>
 
-        <main class="main-cointainer">
-            <section class="bio">
+        <main class="main-cointainer main-p" id="about">
+            <section class="bio" >
                 <h1 class="text-center">BOOTCAMP CLUB</h1>
-                <p>BOOTCAMP CLUB is a place that seeks to expand the knowledge of KODIGO users who are studying in the FULL STACK Junior, thus improving their learning capabilities and efficient work methods, allowing them to obtain trained professionals through sharing study and work experiences.</p>
+                <p>BOOTCAMP CLUB is a place that seeks to expand the knowledge of KODIGO users who are studying in the FULL STACK Junior, thus improving their learning capabilities <span id="boti"></span> and efficient work methods, allowing them to obtain trained professionals through sharing study and work experiences.</p>
+                <span></span>
                 
             </section>
-        <section class="img">
+        <section class="img" >
             <img src="./img/img main.jpg"alt="">
         </section>
         </main>
 
-        <section class="botones-m">
-        <h1 class="text-center mt-5">MEMBERS</h1>
-        <article class="user-bot mt-4">
-        <button type="button" class="btn btn-success">Oscar Beltran</button>
-        <button type="button" class="btn btn-success">Luis Giron</button>
-        <button type="button" class="btn btn-success">Anthony Arias</button>
+        <section class="botones-m" >
+        <h1 class="text-center miembros">MEMBERS</h1>
+        <article class="user-bot mt-4 " id="menb">
+        <button type="button" class="btn btn-success" onclick="infoOscar()" >Oscar Beltran</button>
+        <button type="button" class="btn btn-success" onclick="infoLuis()">Luis Giron</button>
+        <button type="button" class="btn btn-success" onclick="infoAnthony()">Anthony Arias</button>
         </article>
         </section>    
 
-        <section class="members mt-5">
-        <section class="menmbers1 row">
-            <article class="col-6 textUser">
-            <h1 class="text-center">Oscar Beltran</h1>
-            <p class="text-center">Java, Javascript, HTML, CSS</p>
-            </article>
-        <section class="img-m1 col-6">
-            <img src="./img/Imagen de WhatsApp 2024-09-22 a las 21.14.23_0250bd72.jpg" width="300" height="300" alt="">
-        </section>
-        </section>
-            
-        <section class="projects-header mb-5">
-            <h2 class="text-center">My Projects</h2>
-        </section>
-        
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./img/Proyectos Carlos/Imagen de WhatsApp 2024-09-24 a las 16.34.09_be433167.jpg" class="d-block w-100" alt="...">
+        <div id="miembros" class="members mt-5">
+        </div>
+
+          <section class="projects-header mb-5 proyecto">
+              <h2 class="text-center">My Projects</h2>
+          </section>
+          
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./img/Proyectos Anthony Arias/Captura de pantalla 2024-09-23 212946.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/Proyectos Anthony Arias/Captura de pantalla 2024-09-23 213011.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/Proyectos Anthony Arias/Captura de pantalla 2024-09-23 213035.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/Proyectos Anthony Arias/Captura de pantalla 2024-09-23 213053.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/Proyectos Carlos/LUIS.jpg" class="d-block w-100" alt="...">
+                </div>
               </div>
-              <div class="carousel-item">
-                <img src="./img/Proyectos Carlos/LUIS.jpg" class="d-block w-100" alt="...">
-              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+          </section>
+        
 
-                    <section class="members mt-5">
-                        <section class="menmbers1 row">
-                            <article class="col-6 textUser">
-                            <h1 class="text-center">Luis Giron</h1>
-                            <p class="text-center">Java, Javascript, HTML, CSS, Python, .Net</p>
-                            </article>
-                        <section class="img-m1 col-6">
-                            <img src="./img/LUIS.jpg" width="300" height="300" alt="">
-                        </section>
-                        </section>
-                            
-                        <section class="projects-header mb-5">
-                            <h2 class="text-center">My Projects</h2>
-                        </section>
-                        
-                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img src="./img/Proyectos Anthony Arias/Captura de pantalla 2024-09-23 212946.png" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="./img/Proyectos Anthony Arias/Captura de pantalla 2024-09-23 213011.png" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="./img/Proyectos Anthony Arias/Captura de pantalla 2024-09-23 213035.png" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="./img/Proyectos Anthony Arias/Captura de pantalla 2024-09-23 213053.png" class="d-block w-100" alt="...">
-                              </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </button>
-                          </div>
-                
-                                    <section class="members mt-5">
-                                        <section class="menmbers1 row">
-                                            <article class="col-6 textUser">
-                                            <h1 class="text-center">Anthony Arias</h1>
-                                            <p class="text-center">Java, Javascript, HTML, CSS, Python, .Net</p>
-                                            </article>
-                                        <section class="img-m1 col-6">
-                                            <img src="./img/yop.jpg" width="300" height="300" alt="">
-                                        </section>
-                                        </section>
-                                            
 
-                                        <section class="projects-header mb-5">
-                                            <h2 class="text-center">My Projects</h2>
-                                        </section>
-                                        
-                                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                                            <div class="carousel-inner">
-                                              <div class="carousel-item active">
-                                                <img src="./img/Proyectos Anthony Arias/Captura de pantalla 2024-09-23 212946.png" class="d-block w-100" alt="...">
-                                              </div>
-                                              <div class="carousel-item">
-                                                <img src="./img/Proyectos Anthony Arias/Captura de pantalla 2024-09-23 213011.png" class="d-block w-100" alt="...">
-                                              </div>
-                                              <div class="carousel-item">
-                                                <img src="./img/Proyectos Anthony Arias/Captura de pantalla 2024-09-23 213035.png" class="d-block w-100" alt="...">
-                                              </div>
-                                              <div class="carousel-item">
-                                                <img src="./img/Proyectos Anthony Arias/Captura de pantalla 2024-09-23 213053.png" class="d-block w-100" alt="...">
-                                              </div>
-                                            </div>
-                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                              <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                              <span class="visually-hidden">Next</span>
-                                            </button>
-                                          </div>
+                   
                                 
 
         <!--FORM-->
         
-        <section class="contact-form rounded mx-auto d-block mt-5 rounded-4 border border-secondary-subtle">
-            <article class="header-form mt-4">
-                <h2>CONTACT</h2>
-            </article>
-            <section class="form-body col-10 ms-5">
-                <div class="input-group flex-nowrap mb-3 mt-3">
-                    <input type="text" class="form-control p-3 mb-2 bg-secondary text-white bg-opacity-50 bs-body-color border border-dark custom-input ingreso" placeholder="Your Name" aria-label="Username" aria-describedby="addon-wrapping">
-                </div>
-                <div class="form-floating mb-3 mt-">
-                    <input type="email" class="form-control p-3 mb-2 bg-secondary text-white bg-opacity-50 text-body border border-dark" id="floatingInput" placeholder="Your Email">
-                    <label for="floatingInput"></label>
-                </div>
-                <div class="form-floating">
-                    <textarea class="form-control p-3 mb-2 bg-secondary text-white bg-opacity-50 text-body border border-dark" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                    <label for="floatingTextarea2"></label>
-                </div>
-                <a  class="btn btn-success mt-4 col-12" href="#">Send</a>
-            </section>
-        </section>
+        <section class="contact-form rounded mx-auto d-block rounded-4 border border-secondary-subtle" id="contact">
+          <article class="header-form mt-2">
+              <h2>CONTACT</h2>
+          </article>
+          <section class="form-body col-10 ms-5">
+              <div class="input-group flex-nowrap mb-3 mt-3">
+                  <input type="text" class="form-control p-3 mb-2 bg-secondary text-white bg-opacity-50 bs-body-color border border-dark custom-input ingreso" id="nameInput" placeholder="Your Name" aria-label="Username" aria-describedby="addon-wrapping">
+              </div>
+              <div id="alertContainer1" class="mb-3"></div>
+              <div class="form-floating mb-3 mt-">
+                  <input type="email" class="form-control p-3 mb-2 bg-secondary text-white bg-opacity-50 text-body border border-dark" id="emailInput" placeholder="Your Email">
+                  <label for="floatingInput"></label>
+              </div>
+              <div id="alertContainer2" class="mb-3"></div>
+              <div class="form-floating">
+                  <textarea class="form-control p-1  mb-2 bg-secondary text-white bg-opacity-50 text-body border border-dark" placeholder="Leave a comment here" id="messageInput" style="height: 100px"></textarea>
+                  <label for="floatingTextarea2"></label>
+              </div>
+              <div id="alertContainer3" class="mb-3"></div>
+              <button class="btn btn-success mt-0 col-12" id="submitButton">Send</button>
+               <!-- Aquí se mostrarán las alertas -->
+          </section>
+      </section>
+      
         
         <!--FOOTEE-->
         <footer class="footer text-center mt-5 ">
@@ -196,5 +143,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+    <script src="./DOM.js"></script>
+  </body>
 </html>

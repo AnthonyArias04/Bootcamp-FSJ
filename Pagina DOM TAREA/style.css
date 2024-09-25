@@ -2,7 +2,9 @@
 
 
 body{
-    background-color: gray !important;
+    background-color: gray ;
+    font-family: Arial, sans-serif !important;
+
 }
 
 /*-------Header Section--------*/
@@ -55,16 +57,16 @@ body{
     
 }
 .main-cointainer .bio{
-    margin-top: 25vh !important;
+    margin-top: 35vh !important;
 }
 .main-cointainer .img img{
     width: 25vw;
     border-radius: 2em;
-    margin-top: 25vh !important;
+    margin-top: 35vh !important;
 }
 
 .img-m1 img{
-    border-radius: 90% !important;
+    border-radius: 30% !important;
 }
 
 .textUser{
@@ -77,6 +79,9 @@ body{
     align-items: center;
     gap: 8vw;
 }
+.fontmenu{
+    margin-right: 10px;
+}
 
 
 .contact-form{
@@ -87,6 +92,7 @@ body{
     border-radius: 7rem;
     font-family: "Nerko One", cursive;
     font-weight: 400;
+    margin-top: 25vh !important;
 }
 
 
@@ -100,6 +106,7 @@ body{
 }
 .form-body textarea{
     color: white !important;
+    height: 5vh !important;
 }
 .form-control::placeholder{
     color: white !important;
@@ -116,6 +123,14 @@ body{
 .contact-form{
     margin-top: 18vh;
 }
+
+.miembros{
+    margin-top: 30vh !important;
+}
+.proyecto{
+    margin-top: 25vh !important;
+}
+
 
 
 @media(min-width:1500px) and (max-width:1800px){
@@ -232,6 +247,12 @@ body{
         transition: 0.6s;
         color: black;
     }
+    .img-m1 img{
+        border-radius: 30% !important;
+        height: 15vh !important;
+        width: 30vw !important;
+        margin-top: 12vh !important;
+    }
 }
 @media(min-width:550px) and (max-width:599px) {
     .contact-form {
@@ -254,6 +275,12 @@ body{
         font-size: 1.2em;
         transition: 0.6s;
         color: black;
+    }
+    .img-m1 img{
+        border-radius: 30% !important;
+        height: 15vh !important;
+        width: 30vw !important;
+        margin-top: 12vh !important;
     }
 }
 @media(min-width:500px) and (max-width:549px) {
@@ -278,6 +305,12 @@ body{
         transition: 0.6s;
         color: black;
     }
+    .img-m1 img{
+        border-radius: 30% !important;
+        height: 15vh !important;
+        width: 30vw !important;
+        margin-top: 12vh !important;
+    }
 }
 @media(min-width:400px) and (max-width:499px) {
     .contact-form {
@@ -301,6 +334,12 @@ body{
         transition: 0.6s;
         color: black;
     }
+    .img-m1 img{
+        border-radius: 30% !important;
+        height: 15vh !important;
+        width: 33vw !important;
+        margin-top: 12vh !important;
+    }
 }
 @media(min-width:300px) and (max-width:499px) {
     .contact-form {
@@ -323,6 +362,12 @@ body{
         font-size: 1em;
         transition: 0.6s;
         color: black;
+    }
+    .img-m1 img{
+        border-radius: 30% !important;
+        height: 15vh !important;
+        width: 33vw !important;
+        margin-top: 12vh !important;
     }
 }
 

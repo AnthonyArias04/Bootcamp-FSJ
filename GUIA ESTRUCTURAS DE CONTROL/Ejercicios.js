@@ -28,7 +28,7 @@ Al final deberá mostrar los datos del alumno, nombre, carnet y nota final.*/
 
 
 
-function notaFinal(){
+/*function notaFinal(){
     let nombre, carnet=Number;
     let exa =Number, tar=Number, asis=Number, inves=Number, notaFi=Number;
 
@@ -53,5 +53,20 @@ function notaFinal(){
     
 }
 
-notaFinal()
+notaFinal()*/
+
+/*Calcular el aumento de trabajador tomando en cuenta la tabla de categorías de aumento.
+Para este ejercicio deberá de asignar las siguientes variables: nombre, salario, categoría y
+aumento. Deberá demostrar los datos del empleado y el aumento salarial.*/
+
+let nombre, salario, categoria, aumento;
+
+nombre = prompt("Escriba el nombre de el empleado: ")
+categoria = prompt("Escriba la categoria de el empleado las cuales son: \nA \nB \nC \nD");
+let mayuscula = categoria.toUpperCase
+
+if (categoria = "A"){
+    salario = 500;
+    aumento = 0.15 * 500;
+}
 

@@ -130,7 +130,16 @@ body{
 .proyecto{
     margin-top: 25vh !important;
 }
-
+.elegir{
+    background-color: gray;
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+}
+.clar-os{
+    display: flex;
+    justify-content:space-around;
+}
 
 
 @media(min-width:1500px) and (max-width:1800px){
@@ -152,11 +161,32 @@ body{
         margin-top: 2vh;
         width: 15vw;
         height: 15vh;
-        margin-left: 3.5vw;
+        margin-right: 10vw;
     }
         .projects {
             margin-right: 3em !important;
         }
+    .img-m1 img{
+        border-radius: 30% !important;
+        height: 35vh !important;
+        width: 25vw !important;
+        margin-top: 12vh !important;
+    }
+    .fontmenu{
+        margin-top: 3vh !important;
+    }
+    
+    .clar-os{
+        display: flex;
+        justify-content:space-around;
+        margin-right: 5vw;
+    }
+    .claro{
+        margin-right: 1vw;
+    }
+    .menu{
+        margin-top: 6vh;
+    }
     }
 @media(min-width:850px) and (max-width:999px){
     .contact-form {
@@ -167,10 +197,10 @@ body{
         font-size: 1.2em;
     }
     .header .navbar .logo img {
-        margin-top: 1vh;
+        margin-top: 2vh;
         width: 19vw;
         height: 16vh;
-        margin-left: 3vw;
+        margin-right: 18vw;
     }
         .header .navbar .menu li a:hover {
             font-size: 1.4em;
@@ -180,6 +210,21 @@ body{
                 .projects {
                     margin-right: 4em !important;
                 }
+                .fontmenu{
+                    margin-top: 3vh !important;
+                }
+                
+                .clar-os{
+                    display: flex;
+                    justify-content:space-around;
+                    margin-right: 5vw;
+                }
+                .claro{
+                    margin-right: 1vw;
+                }
+                .menu{
+                    margin-top: 6vh;
+                }
 }
 @media(min-width:750px) and (max-width:849px){
     .contact-form {
@@ -187,21 +232,33 @@ body{
     }
 
     .header .navbar .menu {
-        width: 38vw;
+        width: 58vw;
         font-size: 1em !important;
     }
 
     .header .navbar .logo img {
-        margin-top: 1.8vh;
-        width: 15vw;
-        height: 12vh;
-        margin-left: 3.5vw;
+        display: none;
     }
     .header .navbar .menu li a:hover {
         font-size: 1.2em;
         transition: 0.6s;
         color: black;
      }
+     .fontmenu{
+        margin-top: 3vh !important;
+    }
+    
+    .clar-os{
+        display: flex;
+        justify-content:space-around;
+        margin-right: 5vw;
+    }
+    .claro{
+        margin-right: 1vw;
+    }
+    .menu{
+        margin-top: 6vh;
+    }
 }
 @media(min-width:650px) and (max-width:749px) {
     .contact-form {
@@ -209,20 +266,32 @@ body{
     }
 
     .header .navbar .menu {
-        width: 40vw;
+        width: 50vw;
         font-size: 1em;
     }
 
     .header .navbar .logo img {
-        margin-top: 2vh;
-        width: 14vw;
-        height: 11vh;
-        margin-left: 4.5vw;
+        display: none;
     }
         .header .navbar .menu li a:hover {
             font-size: 1.2em;
             transition: 0.6s;
             color: black;
+        }
+        .fontmenu{
+            margin-top: 3vh !important;
+        }
+        
+        .clar-os{
+            display: flex;
+            justify-content:space-around;
+            margin-right: 5vw;
+        }
+        .claro{
+            margin-right: 1vw;
+        }
+        .menu{
+            margin-top: 6vh;
         }
 }
 @media(min-width:600px) and (max-width:649px) {
@@ -236,10 +305,7 @@ body{
     }
 
     .header .navbar .logo img {
-        margin-top: 2vh;
-        width: 14vw;
-        height: 11vh;
-        margin-left: 5.5vw;
+        display: none;
     }
 
     .header .navbar .menu li a:hover {
@@ -249,9 +315,24 @@ body{
     }
     .img-m1 img{
         border-radius: 30% !important;
-        height: 15vh !important;
+        height: 30vh !important;
         width: 30vw !important;
         margin-top: 12vh !important;
+    }
+    .fontmenu{
+        margin-top: 3vh !important;
+    }
+    
+    .clar-os{
+        display: flex;
+        justify-content:space-around;
+        margin-right: 5vw;
+    }
+    .claro{
+        margin-right: 1vw;
+    }
+    .menu{
+        margin-top: 6vh;
     }
 }
 @media(min-width:550px) and (max-width:599px) {
@@ -265,10 +346,7 @@ body{
     }
 
     .header .navbar .logo img {
-        margin-top: 2vh;
-        width: 14vw;
-        height: 11vh;
-        margin-left: 6.5vw;
+        display: none;
     }
 
     .header .navbar .menu li a:hover {
@@ -278,9 +356,24 @@ body{
     }
     .img-m1 img{
         border-radius: 30% !important;
-        height: 15vh !important;
+        height: 30vh !important;
         width: 30vw !important;
         margin-top: 12vh !important;
+    }
+    .fontmenu{
+        margin-top: 3vh !important;
+    }
+    
+    .clar-os{
+        display: flex;
+        justify-content:space-around;
+        margin-right: 5vw;
+    }
+    .claro{
+        margin-right: 1vw;
+    }
+    .menu{
+        margin-top: 6vh;
     }
 }
 @media(min-width:500px) and (max-width:549px) {
@@ -294,10 +387,7 @@ body{
     }
 
     .header .navbar .logo img {
-        margin-top: 2vh;
-        width: 14vw;
-        height: 11vh;
-        margin-left: 7vw;
+        display: none;
     }
 
     .header .navbar .menu li a:hover {
@@ -307,9 +397,24 @@ body{
     }
     .img-m1 img{
         border-radius: 30% !important;
-        height: 15vh !important;
+        height: 30vh !important;
         width: 30vw !important;
         margin-top: 12vh !important;
+    }
+    .fontmenu{
+        margin-top: 3vh !important;
+    }
+    
+    .clar-os{
+        display: flex;
+        justify-content:space-around;
+        margin-right: 5vw;
+    }
+    .claro{
+        margin-right: 1vw;
+    }
+    .menu{
+        margin-top: 6vh;
     }
 }
 @media(min-width:400px) and (max-width:499px) {
@@ -323,10 +428,7 @@ body{
     }
 
     .header .navbar .logo img {
-        margin-top: 2vh;
-        width: 14vw;
-        height: 11vh;
-        margin-left: 9vw;
+        display: none;
     }
 
     .header .navbar .menu li a:hover {
@@ -336,9 +438,24 @@ body{
     }
     .img-m1 img{
         border-radius: 30% !important;
-        height: 15vh !important;
-        width: 33vw !important;
+        height: 30vh !important;
+        width: 30vw !important;
         margin-top: 12vh !important;
+    }
+    .fontmenu{
+        margin-top: 3vh !important;
+    }
+    
+    .clar-os{
+        display: flex;
+        justify-content:space-around;
+        margin-right: 5vw;
+    }
+    .claro{
+        margin-right: 1vw;
+    }
+    .menu{
+        margin-top: 6vh;
     }
 }
 @media(min-width:300px) and (max-width:499px) {
@@ -352,10 +469,7 @@ body{
     }
 
     .header .navbar .logo img {
-        margin-top: 2vh;
-        width: 0vw;
-        height: 0vh;
-        margin-left: 5.5vw;
+        display: none;
     }
 
     .header .navbar .menu li a:hover {
@@ -365,9 +479,24 @@ body{
     }
     .img-m1 img{
         border-radius: 30% !important;
-        height: 15vh !important;
-        width: 33vw !important;
+        height: 30vh !important;
+        width: 40vw !important;
         margin-top: 12vh !important;
+    }
+    .fontmenu{
+        margin-top: 3vh !important;
+    }
+    
+    .clar-os{
+        display: flex;
+        justify-content:space-around;
+        margin-right: 5vw;
+    }
+    .claro{
+        margin-right: 1vw;
+    }
+    .menu{
+        margin-top: 6vh;
     }
 }
 

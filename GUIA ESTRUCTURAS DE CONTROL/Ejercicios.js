@@ -65,7 +65,7 @@ nombre = prompt("Escriba el nombre de el empleado: ")
 categoria = prompt("Escriba la categoria de el empleado las cuales son: \nA \nB \nC \nD");
 let mayuscula = categoria.toUpperCase
 
-if (categoria = "A"){
+if (categoria == "A"){
     salario = 500;
     aumento = 0.15 * 500;
 }

@@ -186,12 +186,98 @@ La cantidad de múltiplos de 15.
 •
 El valor acumulado de los números ingresados que son pares.*/
 
-function valores (array){
-    let numeros = []
-    let negativos =0, positivos = 0, multiquin = 0, acumulapar = 0;
 
-    for (i = 0; i<10; i++){
-        let num = parseInt(prompt("Ingrese 10 numeros enteros (" + (i +1) + "de 10"))
-        numeros.push(num)
+/*function valores(){
+let cantidadNegativos = 0;
+let cantidadPositivos = 0;
+let cantidadMultiplos15 = 0;
+let sumaPares = 0;
+
+// Cargamos 10 valores
+for (let i = 0; i < 10; i++) {
+    let valor = parseInt(prompt(`Ingrese el valor entero ${i + 1}:`));
+    
+    // Contamos los negativos y positivos
+    if (valor < 0) {
+        cantidadNegativos++;
+    } else if (valor > 0) {
+        cantidadPositivos++;
+    }
+    
+    // Contamos los múltiplos de 15
+    if (valor % 15 === 0) {
+        cantidadMultiplos15++;
+    }
+    
+    // Acumulamos los números pares
+    if (valor % 2 === 0) {
+        sumaPares += valor;
     }
 }
+console.log(`Cantidad de valores negativos: ${cantidadNegativos}`);
+console.log(`Cantidad de valores positivos: ${cantidadPositivos}`);
+console.log(`Cantidad de múltiplos de 15: ${cantidadMultiplos15}`);
+console.log(`Suma de los números pares: ${sumaPares}`);
+
+}
+
+valores()*/
+    
+/*Escriba un programa que muestre la tabla de multiplicar del 1 al 10 del número ingresado
+por el usuario*/
+
+/*let multi, num;
+num = parseInt(prompt("Elige una tabla de multiplicar entre la del 1 al 10: "))
+
+for (i=1; i<=10;i++){
+    console.log(num + "x" + i + "=" + num*i);
+    
+}   */
+
+/*Crear programa donde se introduce una temperatura en Celsius y salga el resultado en
+Fahrenheit, una vez teniendo la temperatura en Fahrenheit deberá devolver lo siguiente:
+• Si ºF está entre 14 y 32, sale la frase “Temperatura baja”
+• Si ºF está entre 32 y 68, sale la frase “Temperatura adecuada”
+• Si ºF está entre 68 y 96, sale la frase “Temperatura alta”
+• Si no está entre ningún caso anterior la frase “Temperatura desconocida”*/
+
+let temperatura, faren;
+
+temperatura = parseInt(prompt("Digite la temperatura C°: "));
+faren = temperatura * 9 / 5 + 32;
+console.log(faren);
+
+
+if (faren >= 14 && faren <= 32){
+    console.log("Temperatura baja");
+} else if(faren > 32 && faren <= 68 ){
+    console.log("Temperatura adecuada");   
+} else if (faren > 68 && faren < 96) {
+    console.log("Temperatura alta");
+    
+    
+}else{
+    console.log("error");
+
+}
+
+
+
+/*let temperaturaCelsius, temperaturaFahrenheit;
+
+// Solicitar la temperatura en Celsius
+temperaturaCelsius = parseInt(prompt("Digite la temperatura en Celsius: "));
+
+// Convertir la temperatura a Fahrenheit
+temperaturaFahrenheit = temperaturaCelsius * 9 / 5 + 32;
+console.log(`Temperatura en Fahrenheit: ${temperaturaFahrenheit}`);
+
+if (temperaturaFahrenheit >= 14 && temperaturaFahrenheit <= 32) {
+    console.log("Temperatura baja");
+} else if (temperaturaFahrenheit > 32 && temperaturaFahrenheit <= 68) {
+    console.log("Temperatura adecuada");
+} else if (temperaturaFahrenheit > 68 && temperaturaFahrenheit < 96) {
+    console.log("Temperatura alta");
+} else {
+    console.log("Temperatura desconocida");
+}*/

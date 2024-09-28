@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Chauchis } from "./chauchis"
 
 //DECLARACION DE UN COMPONENTE
 export const Saludo = ()=>{
@@ -12,6 +13,8 @@ export const Saludo = ()=>{
         <h3>Yo en realidad estoy en el componente saludo</h3>
         <h4>Hola {nombre} como estas?</h4>
         <button onClick={()=> {cambiarNombre("Julio")}}>MAGIA</button>
+
+        <Chauchis nombreUsuario = {nombre}/>
       </>
     )
   }

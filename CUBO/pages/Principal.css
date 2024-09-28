@@ -1,1 +1,33 @@
+.encabeza{
+    background-color: rgb(83, 91, 128);
+}
 
+
+.navega{
+    background-color: rgb(39, 39, 66);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+.menu{
+    width: 55vw;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2em;
+    margin-left: 20%;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    transition: 0.6s;
+}
+.menu a:hover{
+    font-size: 1.3em;
+    transition: 0.6s;
+}
+.final{
+    align-items: center;
+    background-color: rgb(83, 91, 128);
+    display: flex;
+    justify-content: center;
+}

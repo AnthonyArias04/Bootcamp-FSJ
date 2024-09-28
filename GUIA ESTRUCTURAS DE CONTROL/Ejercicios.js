@@ -15,6 +15,11 @@ function edades(){
 
 edades()*/
 
+
+//--------------------------------------------------------------------------------------------------------------
+
+
+
 /*EJERCICIO 2: Crear una función que determine la nota final de un alumno, la cual depende de lo siguiente:
 
 Examen =20%
@@ -55,6 +60,9 @@ Al final deberá mostrar los datos del alumno, nombre, carnet y nota final.*/
 
 notaFinal()*/
 
+
+
+//-------------------------------------------------------------------------------------------------------------------------
 /*Calcular el aumento de trabajador tomando en cuenta la tabla de categorías de aumento.
 Para este ejercicio deberá de asignar las siguientes variables: nombre, salario, categoría y
 aumento. Deberá demostrar los datos del empleado y el aumento salarial.*/
@@ -91,6 +99,10 @@ if (categoria == "A"){
 console.log("Estimado/a " + nombre + " su aumento salarial equivale a: " + aumento + " \nPor lo tanto su salario sera de $"+ salario);*/
 
 
+
+//---------------------------------------------------------------------------------------------------------------------------------
+
+
 /*Crear una función que en base a 2 números enteros que ingrese el usuario, calcular cual número es el mayor y devolverlo.*/
 
 /*function numerosEnteros(){
@@ -111,6 +123,7 @@ console.log("Estimado/a " + nombre + " su aumento salarial equivale a: " + aumen
 numerosEnteros()*/
 
 
+//----------------------------------------------------------------------------------------------------------------------------------------------------
 /*Realizar una función para una tienda de coches en donde se deberá calcular: Si el coche a la venta es un FORD FIESTA, aplicar un 5% de descuento en la compra. Si el coche a la venta es un FORD FOCUS, el descuento será del 10% y si es un FORD ESCAPE el descuento será del 20%. Mostrar en html el coche seleccionado y el descuento que se aplicara en base a lo que selecciono el usuario.*/
 
 /*function descuentoCar(){
@@ -145,6 +158,9 @@ numerosEnteros()*/
 
 descuentoCar()
 */
+
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------
 /*Crear una Función para calcular el descuento en viajes turísticos tomando en cuenta lo siguiente:
 Si el usuario introduce como origen la ciudad de Palma y como destino La costa del Sol, el descuento será de 5%, si el destino es Panchimalco el descuento será del 10% y si el destino es Puerto el Triunfo el descuento será del 15%.*/
 
@@ -176,6 +192,9 @@ Si el usuario introduce como origen la ciudad de Palma y como destino La costa d
 
 viajes()*/
 
+
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------
 /*Se realiza la carga de 10 valores enteros por teclado. Se desea conocer:
 •
 La cantidad de valores negativos ingresados.
@@ -222,7 +241,9 @@ console.log(`Suma de los números pares: ${sumaPares}`);
 }
 
 valores()*/
-    
+
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 /*Escriba un programa que muestre la tabla de multiplicar del 1 al 10 del número ingresado
 por el usuario*/
 
@@ -234,6 +255,8 @@ for (i=1; i<=10;i++){
     
 }   */
 
+
+    //------------------------------------------------------------------------------------------------------------------------------------------------------------
 /*Crear programa donde se introduce una temperatura en Celsius y salga el resultado en
 Fahrenheit, una vez teniendo la temperatura en Fahrenheit deberá devolver lo siguiente:
 • Si ºF está entre 14 y 32, sale la frase “Temperatura baja”
@@ -241,7 +264,7 @@ Fahrenheit, una vez teniendo la temperatura en Fahrenheit deberá devolver lo si
 • Si ºF está entre 68 y 96, sale la frase “Temperatura alta”
 • Si no está entre ningún caso anterior la frase “Temperatura desconocida”*/
 
-let temperatura, faren;
+/*let temperatura, faren;
 
 temperatura = parseInt(prompt("Digite la temperatura C°: "));
 faren = temperatura * 9 / 5 + 32;
@@ -259,7 +282,7 @@ if (faren >= 14 && faren <= 32){
 }else{
     console.log("error");
 
-}
+}*/
 
 
 
@@ -281,3 +304,63 @@ if (temperaturaFahrenheit >= 14 && temperaturaFahrenheit <= 32) {
 } else {
     console.log("Temperatura desconocida");
 }*/
+
+
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------
+/*EJERCICIO 10:
+Se cuenta con la siguiente información:
+•
+Las edades de 5 estudiantes del turno mañana.
+•
+Las edades de 6 estudiantes del turno tarde.
+•
+Las edades de 11 estudiantes del turno noche.
+Nota: Las edades de cada estudiante se deberán ingresar por la web.
+Lo que queremos devolver:
+•
+Obtener el promedio de las edades de cada turno (tres promedios).
+•
+Imprimir dichos promedios (promedio de cada turno).
+•
+Mostrar por pantalla un mensaje que indique cuál de los tres turnos tiene un promedio de edades mayor.*/
+
+
+function calcularPromedio(edades) {
+    let suma = edades.reduce((a, b) => a + b, 0);
+    return suma / edades.length;
+}
+
+
+function obtenerEdades(cantidad, turno) {
+    let edades = [];
+    for (let i = 0; i < cantidad; i++) {
+        let edad = parseInt(prompt(`Ingrese la edad del estudiante ${i + 1} del turno ${turno}:`));
+        edades.push(edad);
+    }
+    return edades;
+}
+
+
+let edadesManana = obtenerEdades(5, "mañana");
+let edadesTarde = obtenerEdades(6, "tarde");
+let edadesNoche = obtenerEdades(11, "noche");
+
+
+let promedioManana = calcularPromedio(edadesManana);
+let promedioTarde = calcularPromedio(edadesTarde);
+let promedioNoche = calcularPromedio(edadesNoche);
+
+
+console.log(`Promedio de edades del turno mañana: ${promedioManana.toFixed(2)}`);
+console.log(`Promedio de edades del turno tarde: ${promedioTarde.toFixed(2)}`);
+console.log(`Promedio de edades del turno noche: ${promedioNoche.toFixed(2)}`);
+
+
+if (promedioManana > promedioTarde && promedioManana > promedioNoche) {
+    console.log("El turno mañana tiene el mayor promedio de edades.");
+} else if (promedioTarde > promedioManana && promedioTarde > promedioNoche) {
+    console.log("El turno tarde tiene el mayor promedio de edades.");
+} else {
+    console.log("El turno noche tiene el mayor promedio de edades.");
+}

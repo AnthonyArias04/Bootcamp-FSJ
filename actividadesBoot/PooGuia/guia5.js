@@ -1,4 +1,19 @@
 /*Crear una clase Cabecera Pagina, que contenga 3 métodos, el primer método que obtenga el título, color y fuente de la página, el segundo método que indique como desea que aparezca el título si centrado, derecha o izquierda y el tercer método que imprima todas las propiedades.*/
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 /*class cabeceraPagina{
     private titulo:string;
     public color:string;
@@ -158,44 +173,117 @@ Nota: Para el método retirar debes de validar que lo que se retire sea mayor de
 Crea un método para mostrar los datos de su nombre, tipo de cuenta y número de cuenta.
 •
 Define un objeto de la clase Cuenta y llama sus métodos.*/
-var cuenta = /** @class */ (function () {
-    function cuenta(nombreParam, cantidadParam, tipoCuentaParam, numeroCuentaParam) {
-        this.nombre = nombreParam;
-        this.cantidad = cantidadParam;
-        this.tipoCuenta = tipoCuentaParam;
-        this.numeroCuenta = numeroCuentaParam;
+/*class cuenta{
+    public nombre:string
+    public cantidad:number
+    public tipoCuenta: string
+    public numeroCuenta: string
+
+    constructor(nombreParam:string, cantidadParam:number, tipoCuentaParam:string, numeroCuentaParam:string) {
+        this.nombre=nombreParam
+        this.cantidad=cantidadParam
+        this.tipoCuenta=tipoCuentaParam
+        this.numeroCuenta=numeroCuentaParam
     }
-    cuenta.prototype.depositar = function (a) {
-        if (a < 5.00) {
+
+    depositar(a){
+        if(a<5.00){
             console.log("El valor a depositar debe ser mayor a 5.00");
+        }else{
+            this.cantidad += a
+            console.log(`Se ha depositado correctamente el $${a}`);
         }
-        else {
-            this.cantidad += a;
-            console.log("Se ha depositado correctamente el $".concat(a));
-        }
-    };
-    cuenta.prototype.retirar = function (valor) {
+    }
+    retirar(valor) {
         if (valor > this.cantidad) {
-            console.log("No hay suficiente dinero en la cuenta.");
+          console.log("No hay suficiente dinero en la cuenta.");
+        } else if (valor < 5.00) {
+          console.log("El monto a retirar debe ser mayor a $5.00.");
+        } else {
+          this.cantidad -= valor
+          console.log(`Has retirado $${valor}. Te quedan $${this.cantidad} en tu cuenta.`);
         }
-        else if (valor < 5.00) {
-            console.log("El monto a retirar debe ser mayor a $5.00.");
+      
+        
+    }
+    mostrarDatos() {
+        console.log(`Nombre: ${this.nombre}, Tipo de cuenta: ${this.tipoCuenta}, Número de cuenta: ${this.numeroCuenta}`);
+      }
+    }
+    
+    const cuenta1 = new cuenta ("Juan Pérez", 100.00, "Ahorros", "1234567890");
+
+    // Llamar a los métodos de la clase
+    cuenta1.mostrarDatos();         // Muestra los datos de la cuenta
+    cuenta1.depositar(3.00);        // Intenta depositar una cantidad menor a $5.00
+    cuenta1.depositar(50.00);       // Deposita una cantidad válida
+    cuenta1.retirar(4.00);          // Intenta retirar una cantidad menor a $5.00
+    cuenta1.retirar(70.00);         // Retira una cantidad válida
+    cuenta1.retirar(200.00);        // Intenta retirar más de lo que tiene
+*/
+//-------------------------------------EJERCICIO 5-----------------------------------------------------
+/* Crear una clase abstracta Persona y va contener lo siguiente:
+Atributos: nombre, apellido, dirección, teléfono y edad.
+Métodos:
+• Crear un método constructor para recibir los datos.
+• Crea un método que en base a la edad imprima un mensaje si es mayor de edad o no.
+• Crea un método para mostrar todos los datos personales (será el método abstracto).
+• Crea una clase extra llamada Empleado y va contener un atributo llamado sueldo.
+• En la clase Empleado añade los métodos cargar sueldo e imprimir sueldo.
+• La clase Empleado va heredar de la clase Persona.
+• Define un objeto de la clase Empleado y que se imprima los datos del empleado y su sueldo.*/
+var persona = /** @class */ (function () {
+    function persona(nombreParam, apellidoParam, direccionParam, telefonoParam, edadParam) {
+        this.nombre = nombreParam;
+        this.apellido = apellidoParam;
+        this.direcion = direccionParam;
+        this.telefono = telefonoParam;
+        this.edad = edadParam;
+    }
+    persona.prototype.mayorMenor = function (a) {
+        if (a >= 18) {
+            console.log("Eres una persona mayor de edad");
         }
         else {
-            this.cantidad -= valor;
-            console.log("Has retirado $".concat(valor, ". Te quedan $").concat(this.cantidad, " en tu cuenta."));
+            console.log("Eres una persona menor de edad.");
         }
     };
-    cuenta.prototype.mostrarDatos = function () {
-        console.log("Nombre: ".concat(this.nombre, ", Tipo de cuenta: ").concat(this.tipoCuenta, ", N\u00FAmero de cuenta: ").concat(this.numeroCuenta));
+    persona.prototype.datosPersona = function () {
+        console.log("Su nombre es: ".concat(this.nombre));
+        console.log("Su apellido es: ".concat(this.apellido));
+        console.log("Su direccion es: ".concat(this.direcion));
+        console.log("Su telefono es: ".concat(this.telefono));
+        console.log("Su edad es: ".concat(this.edad));
     };
-    return cuenta;
+    return persona;
 }());
-var cuenta1 = new cuenta("Juan Pérez", 100.00, "Ahorros", "1234567890");
-// Llamar a los métodos de la clase
-cuenta1.mostrarDatos(); // Muestra los datos de la cuenta
-cuenta1.depositar(3.00); // Intenta depositar una cantidad menor a $5.00
-cuenta1.depositar(50.00); // Deposita una cantidad válida
-cuenta1.retirar(4.00); // Intenta retirar una cantidad menor a $5.00
-cuenta1.retirar(70.00); // Retira una cantidad válida
-cuenta1.retirar(200.00); // Intenta retirar más de lo que tiene
+var humanito = new persona("Julio Anthony", "Reyes Perez", "Casa La Palma el Zonte", "58749968", 30);
+//console.log(humanito);
+humanito.mayorMenor(30);
+humanito.datosPersona();
+var empleado = /** @class */ (function (_super) {
+    __extends(empleado, _super);
+    function empleado(nombreParam, apellidoParam, direccionParam, telefonoParam, edadParam, sueldoParam) {
+        var _this = _super.call(this, nombreParam, apellidoParam, direccionParam, telefonoParam, edadParam) || this;
+        _this.sueldo = sueldoParam;
+        return _this;
+    }
+    empleado.prototype.cargarSueldo = function (i) {
+        i += this.sueldo;
+    };
+    empleado.prototype.imprimirSueldo = function () {
+        console.log("Su sueldo es: ".concat(this.sueldo));
+    };
+    empleado.prototype.datosGeneral = function () {
+        console.log("Su nombre es: ".concat(this.nombre));
+        console.log("Su apellido es: ".concat(this.apellido));
+        console.log("Su direccion es: ".concat(this.direcion));
+        console.log("Su telefono es: ".concat(this.telefono));
+        console.log("Su edad es: ".concat(this.edad));
+        console.log("Su salario es: $ ".concat(this.sueldo));
+    };
+    return empleado;
+}(persona));
+console.log("SEGUNDO INFORME DE CLASE 2");
+var empleadito = new empleado("Julio Anthony", "Reyes Perez", "Casa La Palma el Zonte", "58749968", 30, 500);
+empleadito.datosGeneral();

@@ -247,8 +247,8 @@ class persona{
         this.telefono=telefonoParam;
         this.edad=edadParam;
     }
-    mayorMenor(){
-        if(this.edad>=18){
+    mayorMenor(a){
+        if(a>=18){
             console.log("Eres una persona mayor de edad");
         }else{
             console.log("Eres una persona menor de edad.");
@@ -264,4 +264,41 @@ class persona{
     }
 }
 
-let humanito = new persona ("Julio Anthony","Reyes Perez", "")
+let humanito = new persona ("Julio Anthony","Reyes Perez", "Casa La Palma el Zonte", "58749968", 30)
+//console.log(humanito);
+
+humanito.mayorMenor(30);
+humanito.datosPersona();
+
+class empleado extends persona{
+    public sueldo: number
+
+    constructor(nombreParam:string, apellidoParam:string, direccionParam:string, telefonoParam:string, edadParam:number, sueldoParam:number){
+        super(nombreParam, apellidoParam, direccionParam, telefonoParam, edadParam)
+    
+        
+    this.sueldo= sueldoParam
+    }
+    cargarSueldo(i){
+        i += this.sueldo
+    }
+    imprimirSueldo(){
+        console.log(`Su sueldo es: ${this.sueldo}`);
+        
+    }
+    datosGeneral(){
+        console.log(`Su nombre es: ${this.nombre}`);
+        console.log(`Su apellido es: ${this.apellido}`);
+        console.log(`Su direccion es: ${this.direcion}`);
+        console.log(`Su telefono es: ${this.telefono}`);
+        console.log(`Su edad es: ${this.edad}`);
+        console.log(`Su salario es: $ ${this.sueldo}`);
+        
+    }
+    
+}
+console.log("SEGUNDO INFORME DE CLASE 2");
+
+let empleadito = new empleado ("Julio Anthony","Reyes Perez", "Casa La Palma el Zonte", "58749968", 30, 500)
+
+empleadito.datosGeneral()

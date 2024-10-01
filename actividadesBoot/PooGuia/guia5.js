@@ -171,7 +171,7 @@ var cuenta = /** @class */ (function () {
         }
         else {
             this.cantidad += a;
-            console.log("Se ha depositado correctamente el $${a}");
+            console.log("Se ha depositado correctamente el $".concat(a));
         }
     };
     cuenta.prototype.retirar = function (valor) {

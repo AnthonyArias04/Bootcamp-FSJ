@@ -170,7 +170,7 @@ Crea un método para mostrar los datos de su nombre, tipo de cuenta y número de
 •
 Define un objeto de la clase Cuenta y llama sus métodos.*/
 
-class cuenta{
+/*class cuenta{
     public nombre:string
     public cantidad:number
     public tipoCuenta: string
@@ -217,7 +217,51 @@ class cuenta{
     cuenta1.retirar(4.00);          // Intenta retirar una cantidad menor a $5.00
     cuenta1.retirar(70.00);         // Retira una cantidad válida
     cuenta1.retirar(200.00);        // Intenta retirar más de lo que tiene
+*/
 
 
+//-------------------------------------EJERCICIO 5-----------------------------------------------------
 
-    
+/* Crear una clase abstracta Persona y va contener lo siguiente:
+Atributos: nombre, apellido, dirección, teléfono y edad.
+Métodos:
+• Crear un método constructor para recibir los datos.
+• Crea un método que en base a la edad imprima un mensaje si es mayor de edad o no.
+• Crea un método para mostrar todos los datos personales (será el método abstracto).
+• Crea una clase extra llamada Empleado y va contener un atributo llamado sueldo.
+• En la clase Empleado añade los métodos cargar sueldo e imprimir sueldo.
+• La clase Empleado va heredar de la clase Persona.
+• Define un objeto de la clase Empleado y que se imprima los datos del empleado y su sueldo.*/
+
+class persona{
+    public nombre:string
+    public apellido:string
+    public direcion:string
+    public telefono:string
+    public edad:number
+
+    constructor(nombreParam:string, apellidoParam:string, direccionParam:string, telefonoParam:string, edadParam:number){
+        this.nombre=nombreParam
+        this.apellido=apellidoParam;
+        this.direcion=direccionParam;
+        this.telefono=telefonoParam;
+        this.edad=edadParam;
+    }
+    mayorMenor(){
+        if(this.edad>=18){
+            console.log("Eres una persona mayor de edad");
+        }else{
+            console.log("Eres una persona menor de edad.");
+        }
+    }
+    datosPersona(){
+        console.log(`Su nombre es: ${this.nombre}`);
+        console.log(`Su apellido es: ${this.apellido}`);
+        console.log(`Su direccion es: ${this.direcion}`);
+        console.log(`Su telefono es: ${this.telefono}`);
+        console.log(`Su edad es: ${this.edad}`);
+        
+    }
+}
+
+let humanito = new persona ("Julio Anthony","Reyes Perez", "")

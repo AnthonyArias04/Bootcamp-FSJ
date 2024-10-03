@@ -61,7 +61,7 @@ class Developer extends person{
     private projects:string[];
 
     constructor(nameParam:string, ageParam:number, duiParam:string, expParam: number, techSkillsParam:string, softSkillsParam:string[], gitUserParam: string, areaParam: string, projectParam:string[]){
-        super(nameParam, ageParam, )
+        super(nameParam, ageParam, duiParam)
 
         this.exp = expParam;
         this.techSkills = techSkillsParam;
@@ -75,5 +75,6 @@ class Developer extends person{
     }
 
 }
-let developercito = new Developer()
+
+let developercito = new Developer("Anthony Arias", 20, "0205048-3", 1, "C#, JAVA, JAVASCRIPT, TYPESCRIPT, HTML, CSS, BOOSTRAP",["Comunicacion efectiva, Proactivo, Trabajo en equipo, Liderazgo, Autocritica"], "AnthonygitUser", "Backend Developer", ["APIS"]);
 developercito.getArea();

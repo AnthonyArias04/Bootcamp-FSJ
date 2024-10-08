@@ -1,4 +1,8 @@
-.encabeza{
+body{
+    background-color: rgb(39, 39, 66);
+
+}
+.encabeza{  
     background-color: rgb(83, 91, 128);
 }
 
@@ -30,4 +34,18 @@
     background-color: rgb(83, 91, 128);
     display: flex;
     justify-content: center;
+}
+.tarjet{
+    background-color: rgb(39, 39, 66);
+    height: 40vh;
+    border-radius: 0 !important;
+}
+
+.tarjet h1{
+    margin-left: 3vw;
+    font-size: 5vw;
+}
+.tarjet p{
+    margin-right: 5vw;
+    font-size: 3vw;
 }

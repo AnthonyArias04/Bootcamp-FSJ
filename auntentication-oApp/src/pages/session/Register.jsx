@@ -45,7 +45,7 @@ export default function Register() {
           <label htmlFor="">Confirmar Contraseña</label>
           <input type="confirmPassword"  {...register('confirmPassword')}/>
           <span style={{color: "red"}}>
-            {errors.confirmPassword && errors.confirmPassword.message}
+            {errors.confirmPassword && errors.confirmPasswordO.message}
             </span>
         </div>
         <button type="submit">Registrarse</button>

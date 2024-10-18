@@ -1,17 +1,21 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyA9O8hwTNKZv7YNImF8Qs253V9O9NCFHd0",
-  authDomain: "app-productos-boot.firebaseapp.com",
-  projectId: "app-productos-boot",
-  storageBucket: "app-productos-boot.appspot.com",
-  messagingSenderId: "648521967527",
-  appId: "1:648521967527:web:45ffb7ab399fcc0826b882"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId:import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
+//CREAMOS UNA CONSTANTE QUE NOS VA AYUDAR A CONECTARNOS A LA BD DE FIREBASE
+const db = getFirestore (app)
+export default db;

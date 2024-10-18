@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 
-export default function Form() {
+import ListNotes from './ListNotes'
+
+
+export default function Form({listNotes, setListNotes}) {
 
   //Para manejar los estados utilizaremos los HOOKS utilizando UseState -> maneja el estado de tu componente
 
@@ -13,8 +16,7 @@ export default function Form() {
   const [titleNote, setTitleNote] = useState ("")
   const [descriptionNote, setDescriptionNote] = useState ("")
   
-  //Estado para guardar Notas
-  const [listNotes, setListNotes] = useState([])
+ 
 
   //Funcion para capturar el titulo de la nota:
 
@@ -39,7 +41,7 @@ export default function Form() {
     //Necesitamos guardar la nota
 
     //spread operate (...) hacemos una copia del arreglo y guardamos la nueva nota
-    setListNotes([...listNotes,{
+    setListNotes([...ListNotes,{
       title: titleNote,
       description: descriptionNote
     }])
@@ -57,14 +59,7 @@ export default function Form() {
 
         <input type='submit' value="Guardar nota"/>
     </form>
-    <h2>Iterando las notas</h2>
-    {
-      listNotes.map((note) =>{
-        return(
-          <p>Titulo de la nota: {note.title}</p>
-        )
-      })
-    }
+  
     </div>
   )
 }

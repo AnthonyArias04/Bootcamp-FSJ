@@ -6,3 +6,8 @@
 .encabe{
     background-color: gray;
 }
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}

@@ -11,7 +11,7 @@ export default function ListNotes({listNotes}) {
         return(
             <>
          {/**Pasando la informacion a otro componente */}
-         <Notes nota={note.title} description={note.description}/>
+         <Notes title={note.title} description={note.description}/>
          </>
         )
       })

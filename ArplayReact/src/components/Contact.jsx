@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
+import '../Styles/form.css'
 
+import Alert from 'react-bootstrap/Alert';
+import Button from 'react-bootstrap/Button';
 function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [errors, setErrors] = useState({});
@@ -31,36 +34,34 @@ function Contact() {
   };
 
   return (
-    <form onSubmit={handleSubmit} style={styles.form}>
+    <>
+    <h1 className='text-center text-light mt-4'>Send a message</h1>
+    <p className='text-center text-light mb-4'>Your opinion is important to us. Send us a message to tell us about your experience browsing the site.</p>
+    <div className='form mt-5'>
+    <form onSubmit={handleSubmit} className='main'>
+    <h1>Login</h1>
       <div>
         <label>Name:</label>
         <input type="text" name="name" value={formData.name} onChange={handleChange} />
-        {errors.name && <p>{errors.name}</p>}
+        {errors.name && <p className='error'>{errors.name}</p>}
       </div>
       <div>
         <label>Email:</label>
         <input type="email" name="email" value={formData.email} onChange={handleChange} />
-        {errors.email && <p>{errors.email}</p>}
+        {errors.email && <p className='error'>{errors.email}</p>}
       </div>
       <div>
         <label>Message:</label>
         <textarea name="message" value={formData.message} onChange={handleChange}></textarea>
-        {errors.message && <p>{errors.message}</p>}
+        {errors.message && <p className='error'>{errors.message}</p>}
       </div>
       <button type="submit">Submit</button>
     </form>
+    </div>
+    </>
   );
 }
 
-const styles = {
-  form: {
-    color: 'white',
-    backgroundColor: '#1c1c1c',
-    padding: '2rem',
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '1rem',
-  }
-};
+
 
 export default Contact;

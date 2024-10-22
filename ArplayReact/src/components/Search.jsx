@@ -1,24 +1,16 @@
 import React from 'react';
+import '../Styles/Search.css'
 
 function Search() {
+  ;
   return (
-    <div style={styles.search}>
-      <h1>Search for your favorite music</h1>
-      <p>Coming soon...</p>
+    <div className='search'>
+      <h2 >Search your favorite music</h2>
+      <h1 className='testo'>Coming soon...</h1>
     </div>
   );
 }
 
-const styles = {
-  search: {
-    color: 'white',
-    backgroundColor: '#1c1c1c',
-    minHeight: '100vh',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    textAlign: 'center',
-  }
-};
+
 
 export default Search;

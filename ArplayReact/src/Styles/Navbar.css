@@ -1,10 +1,16 @@
 .navbar{
+    background-color: rgb(48, 48, 48);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
 }
+.StyleLogo{
+    color: white;
+    margin-left: 2vw;
+}
 .NavLinks{
+    margin-right: 5vw;
     display: flex;
     gap: 4rem;
     list-style: none;

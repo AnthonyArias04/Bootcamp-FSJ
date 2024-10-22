@@ -1,0 +1,23 @@
+
+.Img{
+    width: 13vw;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+.row section{
+    background-color: #1c1c1c !important;
+    border-color: transparent;
+}
+.tituloPlay{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    background: linear-gradient(to left, red,black, white);
+    background-clip: text;
+    display: inline;
+    color: transparent;
+    animation: animated 8s linear infinite; 
+    text-transform: uppercase;
+}
+@keyframes animated {
+    to {background-position-x: 161px;}
+}

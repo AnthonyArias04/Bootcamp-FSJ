@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function MusicPlayer() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -11,9 +12,11 @@ function MusicPlayer() {
     <div style={styles.player}>
       <img src="/images/album-art.jpg" alt="Album Art" style={styles.albumArt} />
       <div style={styles.controls}>
+        <Link to="https://open.spotify.com/playlist/4h9IFile4ykWQKRGgGPRMw?si=ejWDyWhWQ823NbvyCVxvuA">
         <button onClick={togglePlay}>
           {isPlaying ? 'Pause' : 'Play'}
         </button>
+        </Link>
         <button>Next</button>
       </div>
     </div>

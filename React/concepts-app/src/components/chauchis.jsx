@@ -4,7 +4,7 @@
 export const Chauchis = ({nombreUsuario}) =>{
     return(
     <>
-    <h2>Chaito {nombreUsuario} desde el chauchis</h2>
+        <h2>Chaito {nombreUsuario} desde el chauchis</h2>
     </>
     )
 }

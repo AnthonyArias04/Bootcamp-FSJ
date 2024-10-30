@@ -41,7 +41,7 @@ export const Session = () => {
         <label> Password </label>
         <input type="password" id="password" placeholder="Enter your password"{... register ('password')}/>
         <label> Repeat your Password</label>
-        <input type="password" id="password" placeholder="Repeat your password" {... register ('confirmPassword')}/>
+        <input type="password" id="confirmPassword" placeholder="Repeat your password" {... register ('confirmPassword')}/>
         <button type="submit">Send</button>
       </form>
     </div>

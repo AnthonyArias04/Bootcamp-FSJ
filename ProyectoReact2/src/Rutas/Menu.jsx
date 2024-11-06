@@ -1,9 +1,9 @@
-import { BrowserRouter, Link, Route, Routes} from 'react-router-dom'
+import { BrowserRouter, Link, Route, Routes} from 'react-router-dom' //ELEMENTOS QUE USA LA LIBRERIA.
 import Home from '../Components/Home'
 import ListProduct from '../Components/ListProduct'
 import AgregarProductos from '../Components/AgregarProductos'
-import EditForm from '../Components/editForm'
-import Editar from '../Components/Editar'
+import EditForm from '../Components/EditForm'
+
 
 
 export default function Menu() {
@@ -28,12 +28,13 @@ export default function Menu() {
         </nav>
     </header>
 
+    {/*CONTENEDOR QUE ENVUELVE A LAS RUTAS> ROUTES*/ }
     <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/Productos' element={<ListProduct/>}/>
         <Route path='/AgregarProductos' element={<AgregarProductos/>}/>
         {/**CREANDO RUTA CON PARAMETRO */}
-        <Route path='/editar/:id' element={<Editar/>}/>
+        <Route path='/editar/:id' element={<EditForm/>}/>
     </Routes>
     </BrowserRouter>
     </>

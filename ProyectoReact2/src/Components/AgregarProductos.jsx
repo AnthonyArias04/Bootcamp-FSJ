@@ -30,7 +30,8 @@ export default function AgregarProductos() {
   navigate('/Productos')
   }
   
-  
+  //EL WATCH PERMITE ESTAR OBSERVANDO UNA ENTRADA DE DATOS
+  //HANDLESUBMIT ES LA ACCION DE LO QUE VOY A HACER CON LOS DATOS
   /**re */
 
   return (

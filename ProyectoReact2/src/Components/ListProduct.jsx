@@ -1,7 +1,8 @@
-import { collection, onSnapshot } from "firebase/firestore"
+import { doc, collection, deleteDoc, onSnapshot } from "firebase/firestore"
 import { useEffect, useState } from "react"
 import db from "../firebase/config"
 import { Link } from "react-router-dom"
+import Swal from 'sweetalert2'
 
 export default function ListProduct() {
 
@@ -17,7 +18,7 @@ export default function ListProduct() {
         //OBJETO DE FIREBASE
         console.log(snapshot);
         //TESTEANDO EL PRIMER DOCUMENTO DE LA COLECCION
-        console.log(snapshot.docs[0].data());
+        console.log(snapshot.docs[3].data());
         
         /**MAPEANDO O ITERANDO LOS DOCUMENTOS DE LA COLECCION */
         const array_products = snapshot.docs.map((doc) =>{
@@ -32,6 +33,33 @@ export default function ListProduct() {
       }
     )
   },[])
+
+  //Funcion para eliminar un producto 
+  const deleteProduct = (id) => {
+   try {
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        //ELIMINAR EL DOCUMENTO
+        deleteDoc(doc(db,"products", id));
+        Swal.fire({
+          title: "Deleted!",
+          text: "Your file has been deleted.",
+          icon: "success"
+        });
+      }
+    });
+  }catch (error) {
+    console.error("ERROR AL ELIMINAR PRODUCTO".error)    
+   }
+  }
   return (
     <div>
       <h1>Lista de productos</h1>
@@ -46,7 +74,7 @@ export default function ListProduct() {
                   <p>{productos.description}</p>
                   <Link to={`/editar/${productos.id}`}>Editar</Link>
                   
-                  <button>Eliminar</button>
+                  <button onClick={() => deleteProduct(productos.id)}>Eliminar</button>
                 </div>
               </div>
             )

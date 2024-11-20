@@ -1,18 +1,18 @@
-/*import React from 'react'
+import React from 'react'
 import { useForm } from 'react-hook-form';
+import { signInWithEmailAndPassword} from 'firebase/auth'
+import { auth } from '../firebase/config';
 
-
-
-export const LoginFormComponents = () => {
+const Login = () => {
 
   const {register, handleSubmit} = useForm();
 
   const onSubmitForm = (data) => {
     console.log(data);
     
-  }
+  
 
- signInWithEmailAndPassword(auth, email, password)
+ signInWithEmailAndPassword(auth, data.email, data.password)
   .then((userCredential) => {
     // Signed in 
     const user = userCredential.user;
@@ -27,7 +27,7 @@ export const LoginFormComponents = () => {
     //localStorage (setItem, getItem)
     sessionStorage.setItem(key, data);
   }
-
+}
   return (
     <div>
         <form onSubmit={handleSubmit(onSubmitForm)}>
@@ -41,4 +41,5 @@ export const LoginFormComponents = () => {
   )
 }
 
-*/
+
+export default Login;

@@ -3,7 +3,7 @@ import Home from '../Components/Home'
 import ListProduct from '../Components/ListProduct'
 import AgregarProductos from '../Components/AgregarProductos'
 import EditForm from '../Components/EditForm'
-
+//import  Login  from '../Components/Login'
 
 
 export default function Menu() {
@@ -15,15 +15,15 @@ export default function Menu() {
     <header>
         <nav>
             <ul>
-                <li>
+                
                     <Link to="/">Home</Link>
-                </li>
-                <li>
+                
+                
                 <Link to="/Productos">Productos</Link>
-                </li>
-                <li><Link to="/AgregarProductos">
+                
+                <Link to="/AgregarProductos">
                     Registros
-                </Link></li>
+                </Link>
             </ul>
         </nav>
     </header>

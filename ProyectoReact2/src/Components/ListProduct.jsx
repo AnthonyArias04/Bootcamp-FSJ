@@ -32,8 +32,10 @@ export default function ListProduct() {
         setProdcutos(array_products)
       }
     )
+    
   },[])
-
+  
+  
   //Funcion para eliminar un producto 
   const deleteProduct = (id) => {
    try {
